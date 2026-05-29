@@ -1,33 +1,406 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Văn Tú</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-            background-color: #f0f0f0;
-        }
-        .box {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-        }
-        h1 {
-            color: #4CAF50;
-        }
-    </style>
+    <title>hutminh | Trang Web Cá Nhân & Blog Toán Học</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Trang web cá nhân và blog chia sẻ kiến thức, kinh nghiệm toán học của hutminh. Khám phá các bài viết lý thuyết toán học chuyên sâu với công thức LaTeX trực quan.">
+    <meta name="keywords"
+        content="hutminh, blog toán học, toán học, chia sẻ kiến thức, latex, công thức toán, giáo dục toán">
+    <meta name="author" content="hutminh">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="hutminh | Trang Web Cá Nhân & Blog Toán Học">
+    <meta property="og:description"
+        content="Trang web cá nhân và blog chia sẻ kiến thức, kinh nghiệm toán học của hutminh. Khám phá các bài viết lý thuyết toán học chuyên sâu.">
+    <meta property="og:image" content="https://github.com/hutminh.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="hutminh | Trang Web Cá Nhân & Blog Toán Học">
+    <meta property="twitter:description"
+        content="Trang web cá nhân và blog chia sẻ kiến thức, kinh nghiệm toán học của hutminh.">
+    <meta property="twitter:image" content="https://github.com/hutminh.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- KaTeX CDN for beautiful mathematical equations -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <!-- Auto-render extension to easily parse math equations inside text -->
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
-    <div class="box">
-        <h1>Error: Server Error ⚔️</h1>
-        <p>Đợi tẹo, đang chạy dân khỏi lạc đà Palmyral.</p>
-        <p>Xin vui lòng thử lại sau 30 giây.</p>
-    </div>
+
+    <!-- Glassmorphic Background Elements -->
+    <div class="bg-blur-circle bg-blur-1"></div>
+    <div class="bg-blur-circle bg-blur-2"></div>
+    <div class="bg-blur-circle bg-blur-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar-container">
+        <div class="navbar-wrapper">
+            <a href="#home" class="logo">
+                <span class="logo-accent">&lt;</span>hutminh<span class="logo-accent">/&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-section="home">
+                    <i data-lucide="user" class="nav-icon"></i> Giới thiệu
+                </a>
+                <a href="#blog" class="nav-link" data-section="blog">
+                    <i data-lucide="book-open" class="nav-icon"></i> Bài viết
+                </a>
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <i data-lucide="mail" class="nav-icon"></i> Liên hệ
+                </a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="icon-btn" aria-label="Chuyển chế độ sáng/tối">
+                    <i data-lucide="sun" class="theme-icon-light"></i>
+                    <i data-lucide="moon" class="theme-icon-dark"></i>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-toggle" class="icon-btn mobile-only" aria-label="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-container">
+
+        <!-- SECTION 1: HOME & ABOUT -->
+        <section id="home" class="view-section active">
+            <!-- Hero Card -->
+            <div class="hero-card fade-in">
+                <div class="hero-layout">
+                    <div class="hero-avatar-wrapper">
+                        <img src="lac_da.jpg" alt="Avatar Bùi Minh Tú" class="hero-avatar"
+                            onerror="this.src='https://github.com/hutminh.png'">
+                        <div class="avatar-ring"></div>
+                    </div>
+                    <div class="hero-content">
+                        <span class="badge">Xin chào, tôi là</span>
+                        <h1 class="hero-name">Bùi Minh Tú</h1>
+                        <p class="hero-subtitle">Người bình thường có những suy nghĩ huyên thuyên!</p>
+                        <p class="hero-description">
+                            Chào mừng bạn đến với blog cá nhân của tôi. Đây là nơi tôi giới thiệu bản thân, chia sẻ
+                            những kinh nghiệm giảng dạy thực tiễn, phát triển giáo trình và đăng tải các bài viết chuyên
+                            sâu về Toán học cấp THCS cũng như toán học cao cấp.
+                        </p>
+                        <div class="hero-social-links">
+                            <a href="https://github.com/hutminh" target="_blank" class="social-chip"
+                                aria-label="GitHub">
+                                <i data-lucide="github"></i> GitHub
+                            </a>
+                            <a href="https://www.facebook.com/anhvit123" target="_blank" class="social-chip"
+                                aria-label="Facebook">
+                                <i data-lucide="facebook"></i> Facebook
+                            </a>
+                            <a href="#contact" class="social-chip primary" aria-label="Liên hệ">
+                                <i data-lucide="send"></i> Kết nối với tôi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About & Personal Intro Details -->
+            <div class="about-grid">
+                <!-- Personal Card -->
+                <div class="glass-card about-card slide-up">
+                    <h2 class="section-title"><i data-lucide="sparkles"></i> Đôi nét về bản thân</h2>
+                    <ul class="personal-info-list"
+                        style="list-style: none; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                        <li style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="user"
+                                class="inline-icon" style="color: var(--color-primary); width: 18px; height: 18px;"></i>
+                            <strong>Họ và tên:</strong> Bùi Minh Tú
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="calendar"
+                                class="inline-icon" style="color: var(--color-primary); width: 18px; height: 18px;"></i>
+                            <strong>Sinh nhật:</strong> 09/05
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="graduation-cap"
+                                class="inline-icon"
+                                style="color: var(--color-primary); width: 18px; height: 18px; margin-top: 3px;"></i>
+                            <div><strong>Học vấn:</strong> Cử nhân Toán học, Trường Đại học Khoa học Tự nhiên, ĐHQGHN
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="about-text">
+                        Tôi là một người yêu thích Age of Empires, bóng đá, toán học. Đối với tôi, toán học không chỉ là
+                        những con số hay phép tính khô khan, mà là một ngôn ngữ tuyệt diệu để mô tả vũ trụ và rèn luyện
+                        tư duy phản biện.
+                    </p>
+                    <p class="about-text">
+                        Trang web này được tạo ra với mục đích giải trí, nơi tôi nói linh tinh về toán học và một số
+                        điều thú vị trong cuộc sống.
+                    </p>
+
+                    <div class="interests-container">
+                        <h3 class="subsection-title">Kỹ năng chuyên môn</h3>
+                        <div class="tags-group" style="margin-bottom: 1.5rem;">
+                            <span class="tag-chip"
+                                style="background-color: var(--bg-tag-accent); color: var(--text-tag-accent);"><i
+                                    data-lucide="edit-3"></i> Soạn thảo: MS Office, LaTeX</span>
+                            <span class="tag-chip"
+                                style="background-color: var(--bg-tag-accent); color: var(--text-tag-accent);"><i
+                                    data-lucide="cpu"></i> Phần mềm: GSP, Geogebra, MathType,...</span>
+                        </div>
+
+                        <h3 class="subsection-title">Lĩnh vực quan tâm</h3>
+                        <div class="tags-group">
+                            <span class="tag-chip"><i data-lucide="hash"></i> Số học (Number Theory)</span>
+                            <span class="tag-chip"><i data-lucide="git-commit"></i> Đại số tuyến tính</span>
+                            <span class="tag-chip"><i data-lucide="activity"></i> Giải tích toán học</span>
+                            <span class="tag-chip"><i data-lucide="graduation-cap"></i> Toán THCS & Tư duy logic</span>
+                            <span class="tag-chip"><i data-lucide="feather"></i> Viết lách & Chia sẻ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Timeline Card -->
+                <div class="glass-card timeline-card slide-up" style="animation-delay: 0.1s;">
+                    <h2 class="section-title"><i data-lucide="briefcase"></i> Hành trình & Kinh nghiệm</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">07/2025 - Hiện tại</div>
+                            <h3 class="timeline-title">Chuyên môn cấp hai (Toán THCS)</h3>
+                            <h4 class="timeline-company"
+                                style="font-size: 0.9rem; color: var(--color-primary); margin-top: 0.15rem; margin-bottom: 0.5rem; font-weight: 600;">
+                                Công ty TNHH MathExpress</h4>
+                            <p class="timeline-desc">Phụ trách công tác chuyên môn toán cấp hai (Toán THCS), nghiên cứu
+                                phát triển chương trình giảng dạy và nâng cao tư duy toán học cho học sinh.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2023 - 07/2025</div>
+                            <h3 class="timeline-title">Nhân viên phát triển nội dung Toán THCS</h3>
+                            <h4 class="timeline-company"
+                                style="font-size: 0.9rem; color: var(--color-primary); margin-top: 0.15rem; margin-bottom: 0.5rem; font-weight: 600;">
+                                HOCMAI</h4>
+                            <p class="timeline-desc">Xây dựng và phát triển nội dung bài học, biên soạn học liệu, bài
+                                tập và đề thi môn Toán cấp THCS trên hệ thống giáo dục trực tuyến.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2018 - 2022</div>
+                            <h3 class="timeline-title">Cử nhân Toán học</h3>
+                            <h4 class="timeline-company"
+                                style="font-size: 0.9rem; color: var(--color-primary); margin-top: 0.15rem; margin-bottom: 0.5rem; font-weight: 600;">
+                                Trường Đại học Khoa học Tự nhiên, ĐHQGHN</h4>
+                            <p class="timeline-desc">Tốt nghiệp chương trình đào tạo chuẩn khoa Toán - Cơ - Tin học.
+                                Nghiên cứu đề tài tiểu luận tốt nghiệp về số diện tích cực tiểu của các tam giác.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: BLOG & ARTICLES -->
+        <section id="blog" class="view-section">
+            <!-- Blog Shell -->
+            <div id="blog-list-view">
+                <div class="section-header slide-up">
+                    <h1 class="page-title"><i data-lucide="book-open"></i> Góc Chia Sẻ & Kiến Thức</h1>
+                    <p class="page-subtitle">Nơi tổng hợp các bài viết chuyên sâu về toán học, phương pháp tư duy và
+                        kinh nghiệm tự học.</p>
+                </div>
+
+                <!-- Filters & Search Bar -->
+                <div class="blog-controls slide-up" style="animation-delay: 0.1s;">
+                    <div class="search-wrapper">
+                        <i data-lucide="search" class="search-icon"></i>
+                        <input type="text" id="search-input" placeholder="Tìm kiếm bài viết, công thức, chủ đề..."
+                            aria-label="Tìm kiếm bài viết">
+                    </div>
+                    <div class="categories-filter" id="categories-filter">
+                        <button class="filter-btn active" data-category="all">Tất cả</button>
+                        <button class="filter-btn" data-category="dai-so">Đại số</button>
+                        <button class="filter-btn" data-category="giai-tich">Giải tích</button>
+                        <button class="filter-btn" data-category="so-hoc">Số học</button>
+                        <button class="filter-btn" data-category="phuong-phap">Phương pháp học</button>
+                    </div>
+                </div>
+
+                <!-- Posts Grid -->
+                <div class="posts-grid" id="posts-container">
+                    <!-- Dynamic posts injected here by app.js -->
+                    <div class="loading-spinner">
+                        <div class="spinner"></div>
+                        <p>Đang tải các bài viết chia sẻ...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Post Detail View (Initially Hidden) -->
+            <div id="blog-detail-view" class="post-detail-container hidden">
+                <button id="back-to-blog-btn" class="back-btn">
+                    <i data-lucide="arrow-left"></i> Quay lại danh sách bài viết
+                </button>
+
+                <article class="post-detail-card glass-card">
+                    <header class="post-detail-header">
+                        <span class="post-detail-category" id="post-detail-category">Danh mục</span>
+                        <h1 class="post-detail-title" id="post-detail-title">Tiêu đề bài viết</h1>
+                        <div class="post-detail-meta">
+                            <span class="meta-item"><i data-lucide="calendar"></i> <span id="post-detail-date">Ngày
+                                    đăng</span></span>
+                            <span class="meta-item"><i data-lucide="clock"></i> <span id="post-detail-read-time">Thời
+                                    gian đọc</span></span>
+                        </div>
+                    </header>
+
+                    <div class="post-detail-cover-wrapper" id="post-detail-cover-wrapper">
+                        <img src="" alt="Cover Image" id="post-detail-cover" class="post-detail-cover">
+                    </div>
+
+                    <div class="post-detail-content markdown-body" id="post-detail-content">
+                        <!-- Rendered post HTML content injected here by app.js -->
+                    </div>
+
+                    <footer class="post-detail-footer">
+                        <div class="post-detail-tags" id="post-detail-tags">
+                            <!-- Tags injected here -->
+                        </div>
+                    </footer>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECTION 3: CONTACT -->
+        <section id="contact" class="view-section">
+            <div class="section-header slide-up">
+                <h1 class="page-title"><i data-lucide="mail"></i> Kết Nối Với Tôi</h1>
+                <p class="page-subtitle">Bạn có câu hỏi toán học thú vị, muốn cùng hợp tác phát triển nội dung hay trao
+                    đổi kinh nghiệm? Hãy gửi tin nhắn cho tôi.</p>
+            </div>
+
+            <div class="contact-layout slide-up" style="animation-delay: 0.1s;">
+                <!-- Contact info card -->
+                <div class="glass-card contact-info-card">
+                    <h2 class="contact-info-title">Thông tin liên hệ</h2>
+                    <p class="contact-info-desc">Tôi luôn sẵn lòng đón nhận những chia sẻ học thuật và những ý tưởng
+                        sáng tạo mới.</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method-item">
+                            <div class="contact-icon-wrapper">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-method-details">
+                                <span class="contact-label">Hòm thư điện tử</span>
+                                <span class="contact-value" id="email-address">minhtubg1999@gmail.com</span>
+                            </div>
+                            <button id="copy-email-btn" class="icon-btn small-btn" title="Sao chép email">
+                                <i data-lucide="copy" id="copy-icon"></i>
+                                <span class="tooltip-text" id="copy-tooltip">Sao chép</span>
+                            </button>
+                        </div>
+                        <div class="contact-method-item">
+                            <div class="contact-icon-wrapper">
+                                <i data-lucide="facebook"></i>
+                            </div>
+                            <div class="contact-method-details">
+                                <span class="contact-label">Facebook cá nhân</span>
+                                <a href="https://www.facebook.com/anhvit123" target="_blank"
+                                    class="contact-link">facebook.com/anhvit123</a>
+                            </div>
+                        </div>
+                        <div class="contact-method-item">
+                            <div class="contact-icon-wrapper">
+                                <i data-lucide="github"></i>
+                            </div>
+                            <div class="contact-method-details">
+                                <span class="contact-label">GitHub cá nhân</span>
+                                <a href="https://github.com/hutminh" target="_blank"
+                                    class="contact-link">github.com/hutminh</a>
+                            </div>
+                        </div>
+                        <div class="contact-method-item">
+                            <div class="contact-icon-wrapper">
+                                <i data-lucide="globe"></i>
+                            </div>
+                            <div class="contact-method-details">
+                                <span class="contact-label">Trang web dự án</span>
+                                <a href="https://hutminh.github.io" target="_blank"
+                                    class="contact-link">hutminh.github.io</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Message Form -->
+                <div class="glass-card contact-form-card">
+                    <h2 class="contact-info-title">Gửi lời nhắn</h2>
+                    <form id="contact-form" class="contact-form"
+                        onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã gửi lời nhắn! Chức năng gửi thư thực tế có thể tích hợp qua dịch vụ như Formspree hoặc EmailJS nếu bạn muốn cấu hình thêm.');">
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="form-name">Họ & Tên</label>
+                                <input type="text" id="form-name" required placeholder="Nguyễn Văn A">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Địa chỉ Email</label>
+                                <input type="email" id="form-email" required placeholder="email@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-subject">Chủ đề</label>
+                            <input type="text" id="form-subject" required placeholder="Góp ý bài viết / Hợp tác...">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Nội dung thư</label>
+                            <textarea id="form-message" rows="5" required
+                                placeholder="Nhập nội dung bạn muốn gửi tới tôi..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i data-lucide="send"></i> Gửi tin nhắn
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="footer-wrapper">
+            <p class="footer-copyright">&copy; 2026 hutminh. Bảo lưu mọi quyền.</p>
+            <div class="footer-text">
+                Thiết kế tối giản và hiện đại. Tích hợp <i data-lucide="code" class="inline-icon"></i> KaTeX render công
+                thức toán học.
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Data and Scripts -->
+    <script src="assets/js/posts.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
+
 </html>
