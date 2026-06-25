@@ -410,8 +410,32 @@ function parseMarkdown(mdText) {
     html = html.replace(/^## (.*?)$/gm, '<h2>$1</h2>');
     html = html.replace(/^# (.*?)$/gm, '<h1>$1</h1>');
     
-    // 3. Parse Blockquotes
-    html = html.replace(/^> (.*?)$/gm, '<blockquote>$1</blockquote>');
+    // 3. Parse Blockquotes & Alerts (consecutive lines starting with >)
+    html = html.replace(/((?:^> [^\n]*\n?)+)/gm, (match) => {
+        let lines = match.split('\n').map(line => line.replace(/^>\s?/, ''));
+        if (lines.length > 0 && lines[lines.length - 1].trim() === '') {
+            lines.pop();
+        }
+        let content = lines.join('\n');
+
+        const alertMatch = content.match(/^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]\n?([\s\S]*)$/i);
+        if (alertMatch) {
+            const alertType = alertMatch[1].toUpperCase();
+            const alertText = alertMatch[2].trim();
+            let bodyHTML = alertText.split(/\n\s*\n/).map(p => `<p>${p}</p>`).join('');
+            
+            let icon = 'info';
+            if (alertType === 'TIP') icon = 'lightbulb';
+            if (alertType === 'IMPORTANT') icon = 'alert-circle';
+            if (alertType === 'WARNING') icon = 'alert-triangle';
+            if (alertType === 'CAUTION') icon = 'zap';
+            
+            return `<div class="alert-box alert-${alertType.toLowerCase()}"><div class="alert-title"><i data-lucide="${icon}" class="inline-icon" style="width:16px; height:16px;"></i> ${alertType}</div><div class="alert-content">${bodyHTML}</div></div>`;
+        }
+        
+        let bodyHTML = content.split(/\n\s*\n/).map(p => `<p>${p}</p>`).join('');
+        return `<blockquote>${bodyHTML}</blockquote>`;
+    });
     
     // 4. Parse Monospace Code blocks (```lang ... ```)
     html = html.replace(/```(?:\w+)?\n([\s\S]*?)```/g, '<pre><code>$1</code></pre>');
@@ -441,7 +465,7 @@ function parseMarkdown(mdText) {
     html = html.replace(/_([^_]+)_/g, '<em>$1</em>');
 
     // 8. Handle paragraphs: Split by double newlines, wrap in <p> if they are not block HTML elements
-    const blockTags = ['h1', 'h2', 'h3', 'blockquote', 'pre', 'ul', 'ol', 'li'];
+    const blockTags = ['h1', 'h2', 'h3', 'blockquote', 'pre', 'ul', 'ol', 'li', 'div'];
     const lines = html.split(/\n\s*\n/);
     
     html = lines.map(line => {
@@ -481,7 +505,8 @@ function getCategoryLabel(category) {
         'dai-so': 'Đại số',
         'giai-tich': 'Giải tích',
         'so-hoc': 'Số học',
-        'phuong-phap': 'Phương pháp học'
+        'phuong-phap': 'Phương pháp học',
+        'thu-thuat': 'Thủ thuật'
     };
     return mapping[category] || 'Kiến thức';
 }
