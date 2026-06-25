@@ -7,6 +7,101 @@
  */
 const BLOG_POSTS = [
     {
+        id: "ubuntu-dual-boot",
+        title: "Hướng dẫn cài đặt Ubuntu Dual Boot với Windows",
+        description: "Việc cài đặt song định (Dual Boot) Ubuntu và Windows trên cùng một máy tính giúp bạn tận dụng được thế mạnh của cả hai hệ điều hành: Windows cho giải trí, phần mềm chuyên dụng và Ubuntu cho lập trình, bảo mật.",
+        category: "thu-thuat",
+        date: "2026-06-24",
+        readTime: "10 phút đọc",
+        coverImage: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&q=80&w=800",
+        tags: ["Ubuntu", "Linux", "Dual Boot", "Windows"],
+        content: `# Hướng dẫn cài đặt Ubuntu Dual Boot với Windows
+
+Việc cài đặt song song (Dual Boot) Ubuntu và Windows trên cùng một máy tính giúp bạn tận dụng được thế mạnh của cả hai hệ điều hành: Windows cho giải trí, chơi game, phần mềm chuyên dụng và Ubuntu cho lập trình, bảo mật và sự ổn định. 
+
+Dưới đây là hướng dẫn chi tiết từng bước để thực hiện an toàn.
+
+> [!WARNING]
+> Mặc dù quá trình cài đặt là an toàn nếu thực hiện đúng, bạn **bắt buộc phải sao lưu các dữ liệu quan trọng** để đề phòng trường hợp thao tác nhầm hoặc mất điện trong quá trình phân vùng ổ cứng.
+
+---
+
+## 1. Chuẩn bị công cụ
+
+Trước khi bắt đầu, bạn cần chuẩn bị:
+- **USB:** Dung lượng tối thiểu 8GB (Lưu ý: toàn bộ dữ liệu hiện có trên USB sẽ bị xóa sạch).
+- **File ISO Ubuntu:** Tải phiên bản mới nhất (khuyến nghị dùng các bản LTS như 22.04 LTS hoặc 24.04 LTS) từ [trang chủ Ubuntu](https://ubuntu.com/download/desktop).
+- **Phần mềm Rufus:** Tải phần mềm [Rufus](https://rufus.ie/) để tiến hành tạo USB Boot.
+
+## 2. Tạo USB Boot Ubuntu
+
+1. Cắm USB vào máy tính Windows.
+2. Mở phần mềm **Rufus** (không cần cài đặt, chạy trực tiếp).
+3. Trong mục **Device**, chọn đúng tên USB của bạn.
+4. Trong mục **Boot selection**, nhấn nút **SELECT** và tìm đến file ISO Ubuntu vừa tải.
+5. Ở mục **Partition scheme**, chọn **GPT** (nếu máy tính của bạn dùng chuẩn UEFI đời mới, hầu hết các máy tính từ 2014 trở lại đây đều dùng chuẩn này). Target system sẽ tự động nhảy sang UEFI (non-CSM).
+6. Nhấn **START** để bắt đầu.
+   - *Lưu ý:* Nếu có hộp thoại hiện ra hỏi về tải thêm Syslinux hay hỏi ghi dưới dạng ISOHybrid/DD Image, hãy chọn chế độ khuyên dùng (Recommend) và nhấn OK.
+7. Đợi vài phút cho đến khi thanh tiến trình chạy xong và Rufus báo **READY**. Lúc này bạn đã có 1 chiếc USB chứa bộ cài Ubuntu.
+
+## 3. Tạo phân vùng trống cho Ubuntu từ Windows
+
+Ubuntu cần một khoảng trống riêng trên ổ cứng để cài đặt. Chúng ta sẽ "cắt" dung lượng này từ Windows.
+
+1. Chuột phải vào nút **Start** trên thanh taskbar của Windows (hoặc nhấn tổ hợp \`Win + X\`), chọn **Disk Management**.
+2. Tìm phân vùng ổ đĩa có dung lượng trống nhiều (thường là ổ C hoặc D).
+3. Chuột phải vào phân vùng đó và chọn **Shrink Volume...**
+4. Hệ thống sẽ mất vài giây để tính toán. Ở ô *Enter the amount of space to shrink in MB*, nhập dung lượng bạn muốn dành cho Ubuntu. 
+   - *Khuyến nghị:* Tối thiểu là \`30000\` (khoảng 30GB). Nếu bạn định dùng Ubuntu lâu dài, hãy cấp khoảng \`50000\` (50GB) hoặc hơn.
+5. Nhấn nút **Shrink**. Bạn sẽ thấy một phân vùng màu đen xuất hiện có nhãn là **Unallocated**. 
+   > [!IMPORTANT]
+   > Hãy giữ nguyên vùng đen (Unallocated) này. Tuyệt đối không được nhấn chuột phải chọn New Simple Volume. Ubuntu sẽ tự động dùng phần chưa định dạng này.
+
+## 4. Thiết lập lại Windows và BIOS/UEFI
+
+### Tắt Fast Startup trên Windows
+Tính năng này của Windows có thể khóa ổ đĩa, khiến Ubuntu không thể can thiệp cài đặt:
+1. Mở **Control Panel** -> Chọn **Power Options** -> Chọn **Choose what the power buttons do** ở cột bên trái.
+2. Nhấn vào dòng chữ xanh *Change settings that are currently unavailable* (yêu cầu quyền Admin).
+3. Bỏ dấu tích ở ô **Turn on fast startup (recommended)** rồi nhấn **Save changes**.
+
+### Tắt Secure Boot (Tùy chọn nhưng nên làm)
+1. Khởi động lại máy tính và nhấn liên tục phím vào BIOS (thường là \`F2\`, \`F10\`, \`F12\` hoặc \`Del\` tùy hãng máy, ví dụ Dell là F2, HP là F10).
+2. Tìm đến tab **Security** hoặc **Boot**.
+3. Chuyển mục **Secure Boot** sang trạng thái **Disabled**.
+4. Lưu thiết lập (thường là phím \`F10\`), chọn Yes và thoát.
+
+## 5. Boot vào USB và Cài đặt Ubuntu
+
+1. Cắm USB Boot vào máy, khởi động lại và nhấn liên tục phím tắt vào **Boot Menu** (ví dụ: \`F12\` cho Dell/Lenovo, \`F9\` cho HP, \`F8\` cho Asus...).
+2. Màn hình Boot Menu hiện ra, dùng phím mũi tên chọn khởi động từ USB của bạn (thường có chữ UEFI: Tên USB).
+3. Tại menu đầu tiên của Ubuntu, chọn dòng **Try or Install Ubuntu** và nhấn Enter.
+4. Khi giao diện đồ họa cài đặt hiện lên:
+   - Chọn ngôn ngữ (khuyến nghị dùng **English**) và nhấn **Install Ubuntu**.
+   - Thiết lập bàn phím: Chọn **English (US)**.
+   - Kết nối Wi-Fi (nếu cần thiết để tải bản cập nhật trong lúc cài, hoặc có thể bỏ qua).
+   - Ở phần **Updates and other software**: Chọn *Normal installation* và tích vào dòng *Install third-party software for graphics and Wi-Fi hardware* để tự cài driver card màn hình/wifi. Nhấn Continue.
+5. **Chọn kiểu cài đặt (Installation type) - BƯỚC QUAN TRỌNG NHẤT:**
+   - Hệ thống sẽ quét thấy bạn đang dùng Windows và cung cấp tùy chọn đầu tiên: **Install Ubuntu alongside Windows Boot Manager**. 
+   - **Đây là lựa chọn dễ và an toàn nhất**. Hãy tích vào mục này và nhấn Continue. Ubuntu sẽ tự động nhận diện vùng trống **Unallocated** bạn đã tạo ở Bước 3 để tự cài vào đó.
+   - Nhấn **Install Now** và chọn Continue khi có hộp thoại xác nhận ghi thay đổi lên ổ đĩa.
+6. Cài đặt các thông tin cá nhân:
+   - Chọn múi giờ trên bản đồ (Ví dụ: Ho Chi Minh).
+   - Điền tên hiển thị, tên máy tính, tên đăng nhập (Username) và **Mật khẩu** (Password). Mật khẩu này sẽ dùng mỗi khi bạn đăng nhập hoặc cài phần mềm, vì vậy hãy ghi nhớ kỹ.
+7. Ngồi nhâm nhi tách cà phê và đợi quá trình cài đặt hoàn tất (khoảng 10 - 20 phút).
+8. Khi xong, một thông báo hiện lên yêu cầu khởi động lại (**Restart Now**). Hệ thống sẽ có dòng nhắc nhở "Please remove the installation medium, then press ENTER", lúc này bạn rút USB ra và nhấn Enter.
+
+## 6. Trải nghiệm thành quả
+
+Sau khi máy tính khởi động lại, thay vì vào thẳng Windows như trước, bạn sẽ thấy một màn hình danh sách gọi là **GRUB bootloader** với nền đen/tím. 
+
+Tại đây, bạn sử dụng phím mũi tên lên/xuống để chọn hệ điều hành muốn sử dụng:
+- Chọn **Ubuntu** (thường là dòng đầu tiên) để dùng Linux.
+- Chọn **Windows Boot Manager** để vào lại Windows bình thường.
+
+Chúc bạn thành công với hành trình khám phá thế giới Linux mã nguồn mở!`
+    },
+    {
         id: "so-nguyen-to",
         title: "Khám phá Vẻ Đẹp và Sự Huyền Bí Của Số Nguyên Tố",
         description: "Số nguyên tố được mệnh danh là những 'viên gạch nguyên tử' của Toán học. Bài viết này sẽ mở ra bức tranh tổng quan về lịch sử, tính chất và những bài toán chưa có lời giải xung quanh chúng.",
