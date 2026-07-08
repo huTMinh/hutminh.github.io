@@ -458,6 +458,9 @@ function parseMarkdown(mdText) {
     html = html.replace(/<\/ul>\s*<ul>/g, '');
     html = html.replace(/<\/ol>\s*<ol>/g, '');
 
+    // 6.5 Parse Links [Text](URL)
+    html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color, #2563eb); text-decoration: underline;">$1</a>');
+
     // 7. Parse Bold and Italic
     html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
     html = html.replace(/\*([^*]+)\*/g, '<em>$1</em>');
