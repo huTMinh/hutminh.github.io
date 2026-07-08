@@ -530,7 +530,7 @@ Lý thuyết trò chơi dạy chúng ta một triết lý quan trọng: **Sự t
         readTime: "Xem Slide",
         coverImage: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800",
         tags: ["Khối 8", "Chuyên môn", "Giáo án"],
-        content: Dưới đây là toàn bộ nội dung cuộc họp chuyên môn dành cho các giáo viên giảng dạy Toán khối 8. Tài liệu bao gồm:
+        content: `Dưới đây là toàn bộ nội dung cuộc họp chuyên môn dành cho các giáo viên giảng dạy Toán khối 8. Tài liệu bao gồm:
 
 - Cơ cấu phân lớp và chuyên đề trọng tâm.
 - Quy ước chấm, chữa và trả phiếu bài tập.
@@ -539,6 +539,6 @@ Lý thuyết trò chơi dạy chúng ta một triết lý quan trọng: **Sự t
 
 Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các thầy cô xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
 
-👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](hop-khoi-8/index.html)**
+👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](hop-khoi-8/index.html)**`
     }
 ];
