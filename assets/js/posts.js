@@ -540,5 +540,25 @@ Lý thuyết trò chơi dạy chúng ta một triết lý quan trọng: **Sự t
 Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các thầy cô xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
 
 👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](hop-khoi-8/index.html)**`
+    },
+    {
+        id: "hop-giao-vien-khoi-4",
+        title: "Tài liệu Họp giáo viên khối 4 (Tháng 7 & 8)",
+        description: "Nội dung triển khai, quy ước chấm chữa phiếu bài tập và các kiến thức trọng tâm, lỗi sai thường gặp của học sinh khối 4.",
+        category: "phuong-phap",
+        date: "2026-07-08",
+        readTime: "Xem Slide",
+        coverImage: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=800",
+        tags: ["Khối 4", "Chuyên môn", "Giáo án"],
+        content: `Dưới đây là toàn bộ nội dung cuộc họp chuyên môn dành cho các giáo viên giảng dạy Toán khối 4. Tài liệu bao gồm:
+
+- Cơ cấu phân lớp và chuyên đề trọng tâm.
+- Quy ước chấm, chữa và trả phiếu bài tập.
+- Vận hành lớp học và bài kiểm tra định kỳ.
+- Phân tích các lỗi sai điển hình của học sinh qua các ví dụ thực tế.
+
+Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các thầy cô xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
+
+👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](hop-khoi-4/index.html)**`
     }
 ];
