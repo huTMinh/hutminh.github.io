@@ -521,6 +521,26 @@ Trong kỷ nguyên AI, lý thuyết trò chơi là nền tảng để phát tri�
 
 Lý thuyết trò chơi dạy chúng ta một triết lý quan trọng: **Sự thành công của bạn không chỉ phụ thuộc vào nỗ lực của chính bạn, mà còn phụ thuộc vào cách bạn dự đoán và tương tác với hành động của người khác**. Việc hiểu rõ các mô hình toán học đằng sau các tương tác chiến lược giúp chúng ta đưa ra quyết định sáng suốt hơn trong một thế giới ngày càng kết nối và phức tạp.`
     },
+    {
+        id: "hop-giao-vien-khoi-7",
+        title: "Tài liệu Họp giáo viên khối 7 (Tháng 7 & 8)",
+        description: "Nội dung triển khai, quy ước chấm chữa phiếu bài tập và các kiến thức trọng tâm, lỗi sai thường gặp của học sinh khối 7.",
+        category: "phuong-phap",
+        date: "2026-07-09",
+        readTime: "Xem Slide",
+        coverImage: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=800",
+        tags: ["Khối 7", "Chuyên môn", "Giáo án"],
+        content: `Dưới đây là toàn bộ nội dung cuộc họp chuyên môn dành cho các giáo viên giảng dạy Toán khối 7. Tài liệu bao gồm:
+
+- Cơ cấu phân lớp và chuyên đề trọng tâm.
+- Quy ước chấm, chữa và trả phiếu bài tập.
+- Vận hành lớp học và bài kiểm tra định kỳ.
+- Phân tích các lỗi sai điển hình của học sinh qua các ví dụ thực tế.
+
+Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các thầy cô xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
+
+👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](hop-khoi-7/index.html)**`
+    },
         {
         id: "hop-giao-vien-khoi-8",
         title: "Tài liệu Họp giáo viên khối 8 (Tháng 7 & 8)",
