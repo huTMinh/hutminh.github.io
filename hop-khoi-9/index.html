@@ -617,18 +617,20 @@
     </div>
 
 
-    <!-- SLIDE 10: DẠNG 1 - RÚT GỌN BIỂU THỨC -->
+    <!-- SLIDE 10: DẠNG 1 - CĂN BẬC HAI -->
     <div class="slide bg-white" id="slide-10">
         <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
             <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
-                    class="fa-solid fa-square-root-variable mr-3 text-brand-orange"></i>Dạng 1: Rút gọn biểu thức</h2>
+                    class="fa-solid fa-square-root-variable mr-3 text-brand-orange"></i>Dạng 1: Căn bậc hai và các bài
+                toán liên quan</h2>
             <img src="logo.png" class="h-10 object-contain" alt="Logo">
         </div>
         <div class="slide-content p-6 overflow-y-auto bg-slate-50">
-            <div class="w-full max-w-5xl mx-auto space-y-6 pb-20">
+            <div class="w-full max-w-7xl mx-auto space-y-6 pb-20">
+                <!-- Ví dụ 1 -->
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-                    <h3 class="text-xl font-bold text-brand-orange mb-3">Bài 5</h3>
-                    <div class="mb-4 text-slate-800 font-medium leading-relaxed">
+                    <h3 class="text-xl font-bold text-brand-orange mb-3">Ví dụ 1.</h3>
+                    <div class="mb-4 text-slate-800 text-lg font-medium leading-relaxed text-justify">
                         Cho các biểu thức $A = \left( \dfrac{15 - \sqrt{x}}{x - 25} + \dfrac{2}{\sqrt{x} + 5} \right) :
                         \dfrac{\sqrt{x} + 1}{\sqrt{x} - 5}$ và $B = \dfrac{1 - \sqrt{x}}{1 + \sqrt{x}}$ với $x \ge 0, x
                         \ne 25$.<br>
@@ -637,249 +639,355 @@
                         c) Tìm các giá trị thực của $x$ để biểu thức $M = A - 2B$ nhận giá trị nguyên.
                     </div>
                     <div
-                        class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-slate-700 text-sm leading-relaxed">
-                        <strong class="text-brand-blue block mb-2">Lời giải:</strong>
-                        <p class="mb-2"><strong>a)</strong> Thay $x = 9$ (thỏa mãn ĐK) vào biểu thức $B$: $B = \dfrac{1
-                            - \sqrt{9}}{1 + \sqrt{9}} = \dfrac{1 - 3}{1 + 3} = \dfrac{-2}{4} = -\dfrac{1}{2}$.</p>
+                        class="bg-slate-50 p-6 rounded-xl border border-slate-200 text-slate-700 text-base leading-relaxed mb-4">
+                        <strong class="text-brand-blue block mb-2 text-lg">Lời giải:</strong>
+                        <p class="mb-2"><strong>a)</strong> Thay $x = 9$ (thỏa mãn điều kiện) vào biểu thức $B$ ta được:
+                            $B = \dfrac{1 - \sqrt{9}}{1 + \sqrt{9}} = \dfrac{1 - 3}{1 + 3} = \dfrac{-2}{4} =
+                            -\dfrac{1}{2}$.<br>
+                            Vậy $B = -\dfrac{1}{2}$ khi $x = 9$.</p>
                         <p class="mb-2"><strong>b)</strong> $A = \dfrac{15 - \sqrt{x} + 2(\sqrt{x} - 5)}{(\sqrt{x} +
                             5)(\sqrt{x} - 5)} \cdot \dfrac{\sqrt{x} - 5}{\sqrt{x} + 1} = \dfrac{\sqrt{x} + 5}{(\sqrt{x}
-                            + 5)(\sqrt{x} - 5)} \cdot \dfrac{\sqrt{x} - 5}{\sqrt{x} + 1} = \dfrac{1}{\sqrt{x} + 1}$.</p>
-                        <p><strong>c)</strong> $M = A - 2B = \dfrac{1}{\sqrt{x} + 1} - \dfrac{2(1 - \sqrt{x})}{1 +
+                            + 5)(\sqrt{x} - 5)} \cdot \dfrac{\sqrt{x} - 5}{\sqrt{x} + 1} = \dfrac{1}{\sqrt{x} + 1}$;</p>
+                        <p><strong>c)</strong> Ta có $M = A - 2B = \dfrac{1}{\sqrt{x} + 1} - \dfrac{2(1 - \sqrt{x})}{1 +
                             \sqrt{x}} = \dfrac{2\sqrt{x} - 1}{\sqrt{x} + 1} = 2 - \dfrac{3}{\sqrt{x} + 1}$.<br>
-                            Với $x \ge 0, x \ne 25 \Rightarrow 0 < \dfrac{3}{\sqrt{x} + 1} \le 3 \Rightarrow -1 \le M <
-                                2$.<br>
-                                Vì $M \in \mathbb{Z} \Rightarrow M \in \{-1, 0, 1\}$.<br>
-                                TH1: $M = -1 \Rightarrow x = 0$ (TM); TH2: $M = 0 \Rightarrow x = \dfrac{1}{4}$ (TM);
-                                TH3: $M = 1 \Rightarrow x = 4$ (TM).<br>
-                                Vậy $x \in \{0; \dfrac{1}{4}; 4\}$.</p>
+                            Dễ thấy, với mọi $x \ge 0, x \ne 25$ thì $\dfrac{3}{\sqrt{x} + 1} > 0$ nên $M = 2 -
+                            \dfrac{3}{\sqrt{x} + 1} < 2$ (1)<br>
+                                Lại có $\sqrt{x} + 1 \ge 1$ với mọi $x \ge 0, x \ne 25$ nên $\dfrac{3}{\sqrt{x} + 1} \le
+                                \dfrac{3}{1} = 3$<br>
+                                Suy ra $M = 2 - \dfrac{3}{\sqrt{x} + 1} \ge 2 - 3 = -1$ (2)<br>
+                                Từ (1), (2) suy ra $-1 \le M < 2$. Vì $M \in \mathbb{Z}$ nên xét các trường hợp sau:<br>
+                                    TH1: $M = -1$, tìm được $x = 0$ (thỏa mãn);<br>
+                                    TH2: $M = 0$, tìm được $x = \dfrac{1}{4}$ (thỏa mãn);<br>
+                                    TH3: $M = 1$, tìm được $x = 4$ (thỏa mãn).<br>
+                                    Vậy $x \in \left\{0; \dfrac{1}{4}; 4\right\}$ thì biểu thức $M$ nhận giá trị nguyên.
+                        </p>
                     </div>
+
+
                 </div>
+
+                <!-- Ví dụ 2 -->
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-                    <h3 class="text-xl font-bold text-brand-orange mb-3">Bài 6</h3>
-                    <div class="mb-4 text-slate-800 font-medium leading-relaxed">
+                    <h3 class="text-xl font-bold text-brand-orange mb-3">Ví dụ 2.</h3>
+                    <div class="mb-4 text-slate-800 text-lg font-medium leading-relaxed text-justify">
                         Cho biểu thức $B = \dfrac{3x + \sqrt{9x} - 3}{x + \sqrt{x} - 2} - \dfrac{\sqrt{x} + 1}{\sqrt{x}
                         + 2} + \dfrac{\sqrt{x} - 2}{1 - \sqrt{x}}$ với $x \ge 0$ và $x \ne 1$.<br>
                         a) Rút gọn biểu thức $B$;<br>
-                        b) Tính giá trị của biểu thức $B$ biết $|x - 5| = 4$;<br>
-                        c) Tìm các giá trị của $x$ để $B < 1$;<br>
-                            d) Cho $A = \dfrac{3\sqrt{x} + 2}{\sqrt{x} - 1}$. So sánh $\dfrac{B}{A}$ với $\dfrac{1}{3}$.
+                        b) Tìm GTNN của $\dfrac{1}{B}$;<br>
+                        c) Tìm GTNN của $P = B \cdot (\sqrt{x} - 1) + \dfrac{9}{\sqrt{x} + 1}$.
                     </div>
                     <div
-                        class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-slate-700 text-sm leading-relaxed">
-                        <strong class="text-brand-blue block mb-2">Lời giải:</strong>
-                        <p class="mb-2"><strong>a)</strong> $B = \dfrac{3x + 3\sqrt{x} - 3 - (\sqrt{x} + 1)(\sqrt{x} -
-                            1) - (\sqrt{x} - 2)(\sqrt{x} + 2)}{(\sqrt{x} + 2)(\sqrt{x} - 1)} = \dfrac{x + 3\sqrt{x} +
-                            2}{(\sqrt{x} + 2)(\sqrt{x} - 1)} = \dfrac{(\sqrt{x}+1)(\sqrt{x}+2)}{(\sqrt{x} + 2)(\sqrt{x}
-                            - 1)} = \dfrac{\sqrt{x} + 1}{\sqrt{x} - 1}$.</p>
-                        <p class="mb-2"><strong>b)</strong> $|x - 5| = 4 \Rightarrow x = 9$ (TM) hoặc $x = 1$ (Loại).
-                            Thay $x = 9 \Rightarrow B = 2$.</p>
-                        <p class="mb-2"><strong>c)</strong> $B < 1 \Leftrightarrow \dfrac{\sqrt{x} + 1}{\sqrt{x} - 1} -
-                                1 < 0 \Leftrightarrow \dfrac{2}{\sqrt{x} - 1} < 0 \Rightarrow \sqrt{x} - 1 < 0
-                                \Rightarrow x < 1$. Kết hợp ĐKXĐ $\Rightarrow 0 \le x < 1$.</p>
-                                <p><strong>d)</strong> $\dfrac{B}{A} = \dfrac{\sqrt{x} + 1}{3\sqrt{x} + 2}$. Xét
-                                    $\dfrac{B}{A} - \dfrac{1}{3} = \dfrac{1}{3(3\sqrt{x} + 2)} > 0 \Rightarrow
-                                    \dfrac{B}{A} > \dfrac{1}{3}$.</p>
+                        class="bg-slate-50 p-6 rounded-xl border border-slate-200 text-slate-700 text-base leading-relaxed mb-4">
+                        <strong class="text-brand-blue block mb-2 text-lg">Lời giải:</strong>
+                        <p class="mb-2"><strong>a)</strong> $x \ge 0$ và $x \ne 1$.<br>
+                            $B = \dfrac{3x + 3\sqrt{x} - 3 - x + 1 - x + 4}{(\sqrt{x} + 2)(\sqrt{x} - 1)} = \dfrac{x +
+                            3\sqrt{x} + 2}{(\sqrt{x} + 2)(\sqrt{x} - 1)} = \dfrac{(\sqrt{x}+2)(\sqrt{x}+1)}{(\sqrt{x} +
+                            2)(\sqrt{x} - 1)} = \dfrac{\sqrt{x} + 1}{\sqrt{x} - 1}$.<br>
+                            Vậy $B = \dfrac{\sqrt{x} + 1}{\sqrt{x} - 1}$ với $x \ge 0$ và $x \ne 1$.
+                        </p>
+                        <p class="mb-2"><strong>b)</strong> Ta có: $\dfrac{1}{B} = \dfrac{\sqrt{x} - 1}{\sqrt{x} + 1} =
+                            \dfrac{\sqrt{x} + 1 - 2}{\sqrt{x} + 1} = 1 - \dfrac{2}{\sqrt{x} + 1}$.<br>
+                            Vì $\sqrt{x} \ge 0$ với mọi $x \ge 0$ và $x \ne 1$ nên $\sqrt{x} + 1 \ge 1$.<br>
+                            Suy ra $\dfrac{2}{\sqrt{x} + 1} \le 2$ nên $1 - \dfrac{2}{\sqrt{x} + 1} \ge 1 - 2 = -1$ hay
+                            $\dfrac{1}{B} \ge -1$.<br>
+                            Dấu "=" xảy ra khi $x = 0$ (thoả mãn). Vậy GTNN của $\dfrac{1}{B} = -1$ tại $x = 0$.
+                        </p>
+                        <p><strong>c)</strong> $P = B \cdot (\sqrt{x} - 1) + \dfrac{9}{\sqrt{x} + 1} = \dfrac{\sqrt{x} +
+                            1}{\sqrt{x} - 1} \cdot (\sqrt{x} - 1) + \dfrac{9}{\sqrt{x} + 1} = \sqrt{x} + 1 +
+                            \dfrac{9}{\sqrt{x} + 1}$.<br>
+                            <strong>Nhận xét:</strong> $(\sqrt{a} - \sqrt{b})^2 \ge 0$ với mọi $a, b \ge 0$ nên $a + b
+                            \ge 2\sqrt{ab}$.<br>
+                            Dấu "=" xảy ra khi $a = b$.<br>
+                            Áp dụng BĐT trên với 2 số dương $\sqrt{x} + 1; \dfrac{9}{\sqrt{x} + 1}$, ta có: $P \ge 2
+                            \cdot \sqrt{(\sqrt{x} + 1) \cdot \dfrac{9}{\sqrt{x} + 1}} = 2 \cdot 3 = 6$.<br>
+                            Dấu "=" xảy ra khi $\sqrt{x} + 1 = \dfrac{9}{\sqrt{x} + 1}$ hay $x = 4$ (thoả mãn).<br>
+                            Vậy GTNN của $P = 6$ tại $x = 4$.
+                        </p>
                     </div>
+
+
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- SLIDE 11: DẠNG 2 - TOÁN THỰC TẾ -->
+    <!-- SLIDE 11: DẠNG 2 - LƯỢNG GIÁC -->
     <div class="slide bg-white" id="slide-11">
         <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
             <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
-                    class="fa-solid fa-ruler-combined mr-3 text-brand-orange"></i>Dạng 2: Toán thực tế</h2>
+                    class="fa-solid fa-ruler-combined mr-3 text-brand-orange"></i>Dạng 2: Bài toán thực tế liên quan tỷ
+                số lượng giác</h2>
             <img src="logo.png" class="h-10 object-contain" alt="Logo">
         </div>
         <div class="slide-content p-6 overflow-y-auto bg-slate-50">
-            <div class="w-full max-w-5xl mx-auto space-y-6 pb-20">
+            <div class="w-full max-w-7xl mx-auto space-y-6 pb-20">
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-                    <h3 class="text-xl font-bold text-brand-orange mb-3">Bài 1</h3>
-                    <div class="flex flex-col md:flex-row gap-6 mb-4">
-                        <div class="flex-1 text-slate-800 font-medium leading-relaxed">
-                            Để đo khoảng cách từ một điểm $A$ trên bờ sông đến gốc cây $C$ trên cù lao giữa sông, người
-                            ta chọn một điểm $B$ cùng ở trên bờ với $A$ sao cho từ $A$ và $B$ có thể nhìn thấy điểm $C$.
-                            Ta đo được khoảng cách $AB = 40\text{m}$, $\widehat{CAB} = \alpha = 45^\circ$ và
-                            $\widehat{CBA} = \beta = 70^\circ$. Tính khoảng cách $AC$.
+                    <h3 class="text-xl font-bold text-brand-orange mb-3">Ví dụ</h3>
+                    <div class="flex flex-col md:flex-row gap-8 mb-4">
+                        <div class="flex-1 flex flex-col gap-6">
+                            <div class="text-slate-800 text-lg font-medium leading-relaxed text-justify">
+                                Để đo khoảng cách từ một điểm $A$ trên bờ sông đến gốc cây $C$ trên cù lao giữa sông,
+                                người
+                                ta chọn một điểm $B$ cùng ở trên bờ với $A$ sao cho từ $A$ và $B$ có thể nhìn thấy điểm
+                                $C$.
+                                Ta đo được khoảng cách $AB = 40\text{ m}$, $\widehat{CAB} = \alpha = 45^\circ$ và
+                                $\widehat{CBA} = \beta = 70^\circ$. Tính khoảng cách $AC$. Làm tròn kết quả đến hàng
+                                phần
+                                mười.
+                            </div>
+                            <div
+                                class="bg-slate-50 p-6 rounded-xl border border-slate-200 text-slate-700 text-base leading-relaxed flex-1">
+                                <strong class="text-brand-blue block mb-2 text-lg">Lời giải:</strong>
+                                <p>Kẻ đường cao $AH$ trong tam giác $ABC$.<br>
+                                    Tam giác $ABH$ vuông tại $H$ nên ta có $AH = AB \cdot \sin B = 40 \cdot \sin
+                                    70^\circ$
+                                    (cm).<br>
+                                    Trong tam giác $ABC$ có $\widehat{A} + \widehat{B} + \widehat{C} = 180^\circ$ nên
+                                    $\widehat{C} = 180^\circ - (\widehat{A} + \widehat{B})$.<br>
+                                    Mà $\widehat{A} = 45^\circ, \widehat{B} = 70^\circ$ nên $\widehat{C} = 180^\circ -
+                                    (45^\circ
+                                    + 70^\circ) = 65^\circ$.<br>
+                                    Tam giác $ACH$ vuông tại $H$ nên ta có $AH = AC \cdot \sin C$.<br>
+                                    Suy ra $AC = \dfrac{AH}{\sin C} = \dfrac{40 \cdot \sin 70^\circ}{\sin 65^\circ}
+                                    \approx
+                                    41,5$ (cm).</p>
+                            </div>
                         </div>
                         <div
-                            class="w-full md:w-1/3 flex justify-center items-center bg-slate-100 rounded-xl p-2 min-h-[200px]">
+                            class="w-full md:w-1/3 flex justify-center items-center bg-slate-100 rounded-xl p-4 min-h-[300px]">
                             <script type="text/tikz">
-                                \begin{tikzpicture}[scale=0.8]
+                                \begin{tikzpicture}[scale=1.5, font=\Large]
                                   \coordinate (B) at (0,0);
                                   \coordinate (A) at (4,0);
-                                  \coordinate (C) at (2.4, 2.5);
-                                  \coordinate (H) at (2.4, 0); 
-                                  \draw[thick] (B) -- (A) node[midway, below] {$40$m};
+                                  \coordinate (C) at (1.067, 2.933);
+                                  \coordinate (H) at (1.067, 0); 
+                                  \draw[thick] (B) -- (A) node[midway, below] {$40$ m};
                                   \draw[thick] (B) -- (C) -- (A);
                                   \draw[dashed] (C) -- (H);
                                   \node[below] at (H) {$H$};
                                   \node[left] at (B) {$B$};
                                   \node[right] at (A) {$A$};
                                   \node[above] at (C) {$C$};
-                                  \draw (0.5,0) arc (0:65:0.5); \node at (0.7,0.3) {$70^\circ$};
-                                  \draw (3.5,0) arc (180:135:0.5); \node at (3.2,0.3) {$45^\circ$};
+                                  \draw (0.5,0) arc (0:70:0.5); \node at (0.7,0.4) {$70^\circ$};
+                                  \draw (3.5,0) arc (180:135:0.5); \node at (3.1,0.4) {$45^\circ$};
+                                  \draw (1.067,0.2) -- (1.267,0.2) -- (1.267,0);
                                 \end{tikzpicture}
                             </script>
                         </div>
                     </div>
-                    <div
-                        class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-slate-700 text-sm leading-relaxed">
-                        <strong class="text-brand-blue block mb-2">Lời giải:</strong>
-                        <p>Kẻ đường cao $AH$ trong tam giác $ABC$. (Hoặc kẻ đường cao từ đỉnh khác nếu theo cách trong
-                            tài liệu).<br>
-                            Theo tài liệu gốc: kẻ đường cao $AH$ trong tam giác $ABC$.<br>
-                            Tam giác $ABH$ vuông tại $H$ nên ta có $AH = AB \cdot \sin B = 40 \cdot \sin 70^\circ$
-                            (cm).<br>
-                            Trong tam giác $ABC$ có $\widehat{A} + \widehat{B} + \widehat{C} = 180^\circ \Rightarrow
-                            \widehat{C} = 180^\circ - (45^\circ + 70^\circ) = 65^\circ$.<br>
-                            Tam giác $ACH$ vuông tại $H$ nên ta có $AH = AC \cdot \sin C \Rightarrow AC =
-                            \dfrac{AH}{\sin C} = \dfrac{40 \cdot \sin 70^\circ}{\sin 65^\circ} \approx 41,5$ (m).</p>
-                    </div>
-                </div>
 
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 12: DẠNG 3 - BẤT PHƯƠNG TRÌNH -->
+    <div class="slide bg-white" id="slide-12">
+        <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
+            <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
+                    class="fa-solid fa-chart-area mr-3 text-brand-orange"></i>Dạng 3: Bài toán thực tế giải bất phương
+                trình</h2>
+            <img src="logo.png" class="h-10 object-contain" alt="Logo">
+        </div>
+        <div class="slide-content p-6 overflow-y-auto bg-slate-50">
+            <div class="w-full max-w-7xl mx-auto space-y-6 pb-20">
                 <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-                    <h3 class="text-xl font-bold text-brand-orange mb-3">Bài 2</h3>
-                    <div class="flex flex-col md:flex-row gap-6 mb-4">
-                        <div class="flex-1 text-slate-800 font-medium leading-relaxed">
-                            Cho một khu đất có dạng hình thang với đáy nhỏ 15(m), đáy lớn 25(m), chiều cao 18(m). Bác
-                            Hùng muốn dành ra một đường đi có dạng hình bình hành với cạnh đáy là $x$(m) ($0 < x < 15$),
-                                chiều cao 18(m). Tìm giá trị lớn nhất của $x$ để diện tích của phần đất còn lại không
-                                dưới $270(\text{m}^2)$. </div>
-                                <div
-                                    class="w-full md:w-1/3 flex justify-center items-center bg-slate-100 rounded-xl p-2 min-h-[200px]">
-                                    <script type="text/tikz">
-                                \begin{tikzpicture}[scale=0.15]
-                                  \draw[thick] (5,18) -- (20,18) node[midway,above] {$15$m};
-                                  \draw[thick] (0,0) -- (25,0) node[midway,below] {$25$m};
-                                  \draw[thick] (0,0) -- (5,18);
-                                  \draw[thick] (25,0) -- (20,18);
-                                  \draw[thick, fill=gray!30] (14,18) -- (17,18) -- (21,0) -- (18,0) -- cycle;
-                                  \node at (18.5, 9) [rotate=-75, font=\tiny] {\text{Đường đi}};
-                                  \draw[<->, dashed] (-2,0) -- (-2,18) node[midway,left] {$18$m};
-                                  \draw[dashed] (0,0) -- (-3,0); \draw[dashed] (5,18) -- (-3,18);
+                    <h3 class="text-xl font-bold text-brand-orange mb-3">Ví dụ</h3>
+                    <div class="flex flex-col md:flex-row gap-8 mb-4">
+                        <div class="flex-1 flex flex-col gap-6">
+                            <div class="text-slate-800 text-lg font-medium leading-relaxed text-justify">
+                                Cho một khu đất có dạng hình thang với đáy nhỏ $15\text{ (m)}$, đáy lớn $25\text{ (m)}$,
+                                chiều cao $18\text{ (m)}$. Bác Hùng muốn dành ra một đường đi có dạng hình bình hành với
+                                cạnh đáy là $x\text{ (m)}$ ($0 < x < 15$), chiều cao $18\text{ (m)}$ (xem hình minh họa
+                                    bên). Tìm giá trị lớn nhất của $x$ để diện tích của phần đất còn lại không dưới
+                                    $270\text{ (m}^2\text{)}$. </div>
+                                    <div
+                                        class="bg-slate-50 p-6 rounded-xl border border-slate-200 text-slate-700 text-base leading-relaxed flex-1">
+                                        <strong class="text-brand-blue block mb-2 text-lg">Lời giải:</strong>
+                                        <p>Diện tích khu đất bằng $\dfrac{(15 + 25) \cdot 18}{2} = 360 \text{
+                                            (m}^2\text{)}$<br>
+                                            Diện tích phần đường đi là $18x \text{ (m}^2\text{)}$.<br>
+                                            Do đó diện tích của phần đất còn lại là<br>
+                                            $360 - 18x \ge 270$<br>
+                                            $18x \le 90$<br>
+                                            $x \le 5$ (thỏa mãn)<br>
+                                            Vậy $x$ lớn nhất là $5\text{ m}$ thì diện tích của phần đất còn lại không
+                                            dưới
+                                            $270\text{ (m}^2\text{)}$.</p>
+                                    </div>
+                            </div>
+                            <div
+                                class="w-full md:w-5/12 flex justify-center items-center bg-slate-100 rounded-xl p-4 min-h-[300px]">
+                                <script type="text/tikz">
+                                \begin{tikzpicture}[scale=1.5, font=\Large]
+                                  \draw[very thick] (1,3.6) -- (4,3.6) node[midway,above] {\textbf{15 (m)}};
+                                  \draw[very thick] (0,0) -- (5,0) node[midway,below] {\textbf{25 (m)}};
+                                  \draw[very thick] (0,0) -- (1,3.6);
+                                  \draw[very thick] (5,0) -- (4,3.6);
+                                  \draw[very thick, fill=orange!20] (2.5,3.6) -- (3.5,3.6) -- (4.5,0) -- (3.5,0) -- cycle;
+                                  \draw[very thick, <->, dashed] (-1,0) -- (-1,3.6) node[midway,left] {\textbf{18 (m)}};
+                                  \draw[very thick, dashed] (0,0) -- (-1.5,0); \draw[very thick, dashed] (1,3.6) -- (-1.5,3.6);
+                                  \draw[very thick, orange, <->, dashed] (2.5,4.1) -- (3.5,4.1) node[midway,above] {\textbf{\textit{x}}};
+                                  \draw[very thick, orange, <->, dashed] (3.5,-0.4) -- (4.5,-0.4) node[midway,below] {\textbf{\textit{x}}};
                                 \end{tikzpicture}
                             </script>
-                                </div>
+                            </div>
                         </div>
-                        <div
-                            class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-slate-700 text-sm leading-relaxed">
-                            <strong class="text-brand-blue block mb-2">Lời giải:</strong>
-                            <p>Diện tích khu đất hình thang: $S = \dfrac{(15+25) \cdot 18}{2} = 360$ (m$^2$).<br>
-                                Diện tích phần đường đi (hình bình hành): $S_d = 18x$ (m$^2$).<br>
-                                Diện tích phần đất còn lại: $360 - 18x$.<br>
-                                Yêu cầu bài toán: $360 - 18x \ge 270 \Leftrightarrow 18x \le 90 \Leftrightarrow x \le 5$
-                                (thỏa mãn).<br>
-                                Vậy giá trị lớn nhất của $x$ là $5$ (m).</p>
-                        </div>
+
+
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- SLIDE 12: DẠNG 3 - HÌNH HỌC -->
-        <div class="slide bg-white" id="slide-12">
+        <!-- SLIDE 13: DẠNG 4 - ĐƯỜNG TRÒN -->
+        <div class="slide bg-white" id="slide-15">
             <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
                 <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
-                        class="fa-solid fa-circle-nodes mr-3 text-brand-orange"></i>Dạng 3: Hình học</h2>
+                        class="fa-solid fa-circle-nodes mr-3 text-brand-orange"></i>Dạng 4: Sự xác định của đường tròn
+                </h2>
                 <img src="logo.png" class="h-10 object-contain" alt="Logo">
             </div>
             <div class="slide-content p-6 overflow-y-auto bg-slate-50">
-                <div class="w-full max-w-5xl mx-auto space-y-6 pb-20">
+                <div class="w-full max-w-7xl mx-auto space-y-6 pb-20">
+                    <!-- Bài 3 -->
                     <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-                        <h3 class="text-xl font-bold text-brand-orange mb-3">Bài 3</h3>
-                        <div class="flex flex-col md:flex-row gap-6 mb-4">
-                            <div class="flex-1 text-slate-800 font-medium leading-relaxed">
-                                Cho tam giác đều $ABC$ cạnh bằng 6cm, các đường trung tuyến $BM$ và $CN$.<br>
-                                a) Chứng minh bốn điểm $B, C, M, N$ cùng thuộc một đường tròn;<br>
-                                b) Tính bán kính $R$ của đường tròn $(O)$ đi qua ba đỉnh của tam giác $ABC$.
+                        <h3 class="text-xl font-bold text-brand-orange mb-3">Ví dụ 1.</h3>
+                        <div class="flex flex-col md:flex-row gap-8 mb-4">
+                            <div class="flex-1 flex flex-col gap-6">
+                                <div class="text-slate-800 text-lg font-medium leading-relaxed text-justify">
+                                    Cho tam giác đều $ABC$ cạnh bằng $6\text{ cm}$, các đường trung tuyến $BM$ và
+                                    $CN$.<br>
+                                    a) Chứng minh bốn điểm $B, C, M, N$ cùng thuộc một đường tròn;<br>
+                                    b) Tính bán kính $R$ của đường tròn $(O)$ đi qua ba đỉnh của tam giác $ABC$.
+                                </div>
+                                <div
+                                    class="bg-slate-50 p-6 rounded-xl border border-slate-200 text-slate-700 text-base leading-relaxed flex-1">
+                                    <strong class="text-brand-blue block mb-2 text-lg">Lời giải:</strong>
+                                    <p class="mb-2"><strong>a)</strong> Tam giác $ABC$ đều nên $BM, CN$ là các đường
+                                        trung tuyến
+                                        đồng thời là các đường cao.<br>
+                                        Suy ra $\Delta BMC, \Delta BNC$ là các tam giác vuông.<br>
+                                        Gọi $I$ là trung điểm của $BC$ thì chứng minh được $IM = IB = IC = IN =
+                                        \dfrac{BC}{2}$.<br>
+                                        Suy ra bốn điểm $B, C, M, N$ cùng thuộc đường tròn $\left(I;
+                                        \dfrac{BC}{2}\right)$.</p>
+                                    <p><strong>b)</strong> Gọi $O$ là giao điểm của $BM$ và $CN$. Dễ thấy ba điểm $A, O,
+                                        I$
+                                        thẳng hàng.<br>
+                                        Tam giác $ABC$ đều nên $BM, CN, AI$ là các đường trung tuyến đồng thời là các
+                                        đường
+                                        trung trực, suy ra $OA = OB = OC$ hay $(O)$ là đường tròn đi qua ba điểm $A, B,
+                                        C$.<br>
+                                        Ta có $IB = IC = 3\text{ cm}$ và theo Pythagore được $AI = \sqrt{AB^2 - IB^2} =
+                                        \sqrt{6^2 - 3^2} = \sqrt{27} = 3\sqrt{3}\text{ cm}$.<br>
+                                        Dễ thấy $O$ là trọng tâm của tam giác $ABC$ nên $OI = \dfrac{1}{3}AI =
+                                        \dfrac{1}{3}
+                                        \cdot 3\sqrt{3} = \sqrt{3}\text{ cm}$.<br>
+                                        Do đó $R = OB = \sqrt{IB^2 + OI^2} = \sqrt{9 + 3} = \sqrt{12} = 2\sqrt{3}\text{
+                                        cm}$.
+                                    </p>
+                                </div>
                             </div>
                             <div
-                                class="w-full md:w-1/3 flex justify-center items-center bg-slate-100 rounded-xl p-2 min-h-[200px]">
+                                class="w-full md:w-1/3 flex justify-center items-center bg-slate-100 rounded-xl p-4 min-h-[300px]">
                                 <script type="text/tikz">
-                                \begin{tikzpicture}[scale=0.5]
+                                \begin{tikzpicture}[scale=1.2, font=\Large]
                                   \coordinate (A) at (0, 5.196);
                                   \coordinate (B) at (-3, 0);
                                   \coordinate (C) at (3, 0);
                                   \coordinate (M) at (1.5, 2.598);
                                   \coordinate (N) at (-1.5, 2.598);
-                                  \coordinate (O) at (0, 1.732);
+                                  \coordinate (O) at (-0.2, 1.532);
                                   \draw[thick] (A) -- (B) -- (C) -- cycle;
                                   \draw[thick] (B) -- (M); \draw[thick] (C) -- (N);
-                                  \draw[blue] (0, 1.732) circle (3.464);
+                                  \draw[blue, thick] (0, 1.732) circle (3.464);
                                   \node[above] at (A) {$A$}; \node[left] at (B) {$B$}; \node[right] at (C) {$C$};
-                                  \node[right] at (M) {$M$}; \node[left] at (N) {$N$}; \node[below] at (O) {$O$};
+                                  \node[right] at (M) {$M$}; \node[left] at (N) {$N$}; \node[below right] at (O) {$O$};
                                 \end{tikzpicture}
                             </script>
                             </div>
                         </div>
-                        <div
-                            class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-slate-700 text-sm leading-relaxed">
-                            <strong class="text-brand-blue block mb-2">Lời giải:</strong>
-                            <p><strong>a)</strong> $\Delta ABC$ đều nên $BM, CN$ là trung tuyến đồng thời là đường cao
-                                $\Rightarrow \Delta BMC, \Delta BNC$ vuông.<br>
-                                Gọi $I$ là trung điểm $BC \Rightarrow IM = IB = IC = IN = \dfrac{BC}{2}$. Suy ra
-                                $B,C,M,N$ thuộc đường tròn $(I; \dfrac{BC}{2})$.</p>
-                            <p><strong>b)</strong> Gọi $O$ là giao điểm $BM$ và $CN$. Vì $\Delta ABC$ đều $\Rightarrow
-                                O$ là trọng tâm, đồng thời là tâm đường tròn ngoại tiếp $\Delta ABC$.<br>
-                                Ta có $AI$ là đường cao $\Rightarrow AI = \sqrt{AB^2 - BI^2} = \sqrt{6^2 - 3^2} =
-                                3\sqrt{3}$ (cm).<br>
-                                Bán kính $R = OA = \dfrac{2}{3}AI = 2\sqrt{3}$ (cm).</p>
-                        </div>
+
+
                     </div>
 
+                    <!-- Bài 4 -->
                     <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-                        <h3 class="text-xl font-bold text-brand-orange mb-3">Bài 4</h3>
-                        <div class="flex flex-col md:flex-row gap-6 mb-4">
-                            <div class="flex-1 text-slate-800 font-medium leading-relaxed">
-                                Cho tam giác nhọn $ABC$ cân tại $A$. Kẻ các đường cao $BH, CK$ của tam giác $ABC$.<br>
-                                a) Chứng minh đường tròn tâm $O$ đường kính $BC$ đi qua hai điểm $K$ và $H$;<br>
-                                b) Chứng minh hai cung nhỏ $\overset{\frown}{BH}$ và $\overset{\frown}{CK}$ của $(O)$
-                                bằng nhau;<br>
-                                c) Tính số đo cung nhỏ $\overset{\frown}{HK}$ của $(O)$ biết $\widehat{BAC} = 40^\circ$.
+                        <h3 class="text-xl font-bold text-brand-orange mb-3">Ví dụ 2.</h3>
+                        <div class="flex flex-col md:flex-row gap-8 mb-4">
+                            <div class="flex-1 flex flex-col gap-6">
+                                <div class="text-slate-800 text-lg font-medium leading-relaxed text-justify">
+                                    Cho tam giác nhọn $ABC$ cân tại $A$. Kẻ các đường cao $BH, CK$ của tam giác
+                                    $ABC$.<br>
+                                    a) Chứng minh rằng đường tròn tâm $O$ đường kính $BC$ đi qua hai điểm $K$ và
+                                    $H$;<br>
+                                    b) Chứng minh hai cung nhỏ $\overset{\frown}{BH}$ và $\overset{\frown}{CK}$ của
+                                    $(O)$
+                                    bằng nhau;<br>
+                                    c) Tính số đo cung nhỏ $\overset{\frown}{HK}$ của $(O)$ biết $\widehat{BAC} =
+                                    40^\circ$.
+                                </div>
+                                <div
+                                    class="bg-slate-50 p-6 rounded-xl border border-slate-200 text-slate-700 text-base leading-relaxed flex-1">
+                                    <strong class="text-brand-blue block mb-2 text-lg">Lời giải:</strong>
+                                    <p class="mb-2"><strong>a)</strong> Xét $\Delta BHC$ vuông tại $H$ có $HO$ là đường
+                                        trung
+                                        tuyến ứng với cạnh huyền $BC$.<br>
+                                        Suy ra $HO = \dfrac{1}{2}BC$ (định lý đường trung tuyến)<br>
+                                        Suy ra $HO = OB = OC$. Tương tự $KO = OB = OC$. Suy ra $HO = KO = OB = OC$.<br>
+                                        Suy ra 4 điểm $B, C, H, K$ thuộc đường tròn tâm $O$, đường kính $BC$ hay đường
+                                        tròn tâm
+                                        $O$ đường kính $BC$ đi qua hai điểm $K$ và $H$.</p>
+                                    <p class="mb-2"><strong>b)</strong> Chứng minh được $\Delta BKC = \Delta CHB$ (cạnh
+                                        huyền -
+                                        góc nhọn) suy ra $BK = CH$.<br>
+                                        Chứng minh được $\Delta OBK = \Delta OCH$ (c-c-c)<br>
+                                        Suy ra $\widehat{BOK} = \widehat{COH}$ nên $\text{sđ}\overset{\frown}{BK} =
+                                        \text{sđ}\overset{\frown}{CH}$.</p>
+                                    <p><strong>c)</strong> Ta có $\Delta BAC$ cân tại $A$, $\Delta BOK$ cân tại $O$. Như
+                                        vậy
+                                        $\Delta BAC \sim \Delta BOK$ (g-g).<br>
+                                        Suy ra $\widehat{BAC} = \widehat{BOK} = 40^\circ$, mà $\Delta OBK = \Delta OCH$
+                                        (c-c-c).<br>
+                                        Suy ra $\widehat{BOK} = \widehat{COH} = 40^\circ$ (hai góc tương ứng) nên
+                                        $\widehat{HOK}
+                                        = 100^\circ$.<br>
+                                        Vậy $\text{sđ}\overset{\frown}{HK} = 100^\circ$.</p>
+                                </div>
                             </div>
                             <div
-                                class="w-full md:w-1/3 flex justify-center items-center bg-slate-100 rounded-xl p-2 min-h-[200px]">
+                                class="w-full md:w-1/3 flex justify-center items-center bg-slate-100 rounded-xl p-4 min-h-[300px]">
                                 <script type="text/tikz">
-                                \begin{tikzpicture}[scale=0.8]
+                                \begin{tikzpicture}[scale=1.6, font=\Large]
                                   \coordinate (B) at (-2,0);
                                   \coordinate (C) at (2,0);
-                                  \coordinate (A) at (0,4);
+                                  \coordinate (A) at (0,5.5);
                                   \coordinate (O) at (0,0);
                                   \draw[thick] (B) -- (A) -- (C) -- cycle;
-                                  \draw[blue] (O) circle (2);
-                                  \coordinate (H) at (1.176, 1.647);
-                                  \coordinate (K) at (-1.176, 1.647);
+                                  \draw[blue, thick] (O) circle (2);
+                                  \coordinate (H) at (1.533, 1.285);
+                                  \coordinate (K) at (-1.533, 1.285);
                                   \draw[thick] (B) -- (H); \draw[thick] (C) -- (K);
+                                  \draw[dashed, thick] (O) -- (H); \draw[dashed, thick] (O) -- (K);
                                   \node[below] at (O) {$O$}; \node[left] at (B) {$B$}; \node[right] at (C) {$C$};
                                   \node[above] at (A) {$A$}; \node[right] at (H) {$H$}; \node[left] at (K) {$K$};
+                                  \draw[thick] (1.601, 1.097) -- (1.413, 1.029) -- (1.345, 1.217);
+                                  \draw[thick] (-1.601, 1.097) -- (-1.413, 1.029) -- (-1.345, 1.217);
                                 \end{tikzpicture}
                             </script>
                             </div>
                         </div>
-                        <div
-                            class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-slate-700 text-sm leading-relaxed">
-                            <strong class="text-brand-blue block mb-2">Lời giải:</strong>
-                            <p><strong>a)</strong> $\Delta BHC$ vuông tại $H$ có $HO$ là trung tuyến $\Rightarrow HO =
-                                \dfrac{1}{2}BC = OB = OC$. Tương tự $KO = OB = OC \Rightarrow B,C,H,K$ thuộc đường tròn
-                                $(O)$.</p>
-                            <p><strong>b)</strong> $\Delta BKC = \Delta CHB$ (cạnh huyền - góc nhọn) $\Rightarrow BK =
-                                CH \Rightarrow \Delta OBK = \Delta OCH$ (c.c.c) $\Rightarrow \widehat{BOK} =
-                                \widehat{COH} \Rightarrow \text{sđ}\overset{\frown}{BK} =
-                                \text{sđ}\overset{\frown}{CH}$.</p>
-                            <p><strong>c)</strong> $\Delta BAC \sim \Delta BOK$ (g-g) $\Rightarrow \widehat{BOK} =
-                                \widehat{BAC} = 40^\circ \Rightarrow \widehat{COH} = 40^\circ$.<br>
-                                Ta có $\widehat{HOK} = 180^\circ - (40^\circ + 40^\circ) = 100^\circ \Rightarrow
-                                \text{sđ}\overset{\frown}{HK} = 100^\circ$.</p>
-                        </div>
+
+
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- SLIDE 13: Q&A -->
-        <div class="slide bg-white" id="slide-13">
+        <!-- SLIDE 14: Q&A -->
+        <div class="slide bg-white" id="slide-14">
             <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
                 <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
                         class="fa-solid fa-comments mr-3 text-brand-orange"></i>Q&A - Giải đáp thắc mắc</h2>
@@ -897,8 +1005,8 @@
             </div>
         </div>
 
-        <!-- SLIDE 14: THANK YOU -->
-        <div class="slide bg-brand-blue" id="slide-14">
+        <!-- SLIDE 15: THANK YOU -->
+        <div class="slide bg-brand-blue" id="slide-15">
             <div
                 class="slide-content h-full flex flex-col items-center justify-center text-center p-10 relative overflow-hidden">
                 <!-- Background Decoration -->
