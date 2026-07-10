@@ -617,105 +617,11 @@
     </div>
 
 
-    <!-- SLIDE 10: DẠNG 1 - CĂN BẬC HAI -->
-    <div class="slide bg-white" id="slide-10">
-        <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
-            <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
-                    class="fa-solid fa-square-root-variable mr-3 text-brand-orange"></i>Dạng 1: Căn bậc hai và các bài
-                toán liên quan</h2>
-            <img src="logo.png" class="h-10 object-contain" alt="Logo">
-        </div>
-        <div class="slide-content p-6 overflow-y-auto bg-slate-50">
-            <div class="w-full max-w-7xl mx-auto space-y-6 pb-20">
-                <!-- Ví dụ 1 -->
-                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-                    <h3 class="text-xl font-bold text-brand-orange mb-3">Ví dụ 1.</h3>
-                    <div class="mb-4 text-slate-800 text-lg font-medium leading-relaxed text-justify">
-                        Cho các biểu thức $A = \left( \dfrac{15 - \sqrt{x}}{x - 25} + \dfrac{2}{\sqrt{x} + 5} \right) :
-                        \dfrac{\sqrt{x} + 1}{\sqrt{x} - 5}$ và $B = \dfrac{1 - \sqrt{x}}{1 + \sqrt{x}}$ với $x \ge 0, x
-                        \ne 25$.<br>
-                        a) Tính giá trị của biểu thức $B$ khi $x = 9$;<br>
-                        b) Rút gọn biểu thức $A$;<br>
-                        c) Tìm các giá trị thực của $x$ để biểu thức $M = A - 2B$ nhận giá trị nguyên.
-                    </div>
-                    <div
-                        class="bg-slate-50 p-6 rounded-xl border border-slate-200 text-slate-700 text-base leading-relaxed mb-4">
-                        <strong class="text-brand-blue block mb-2 text-lg">Lời giải:</strong>
-                        <p class="mb-2"><strong>a)</strong> Thay $x = 9$ (thỏa mãn điều kiện) vào biểu thức $B$ ta được:
-                            $B = \dfrac{1 - \sqrt{9}}{1 + \sqrt{9}} = \dfrac{1 - 3}{1 + 3} = \dfrac{-2}{4} =
-                            -\dfrac{1}{2}$.<br>
-                            Vậy $B = -\dfrac{1}{2}$ khi $x = 9$.</p>
-                        <p class="mb-2"><strong>b)</strong> $A = \dfrac{15 - \sqrt{x} + 2(\sqrt{x} - 5)}{(\sqrt{x} +
-                            5)(\sqrt{x} - 5)} \cdot \dfrac{\sqrt{x} - 5}{\sqrt{x} + 1} = \dfrac{\sqrt{x} + 5}{(\sqrt{x}
-                            + 5)(\sqrt{x} - 5)} \cdot \dfrac{\sqrt{x} - 5}{\sqrt{x} + 1} = \dfrac{1}{\sqrt{x} + 1}$;</p>
-                        <p><strong>c)</strong> Ta có $M = A - 2B = \dfrac{1}{\sqrt{x} + 1} - \dfrac{2(1 - \sqrt{x})}{1 +
-                            \sqrt{x}} = \dfrac{2\sqrt{x} - 1}{\sqrt{x} + 1} = 2 - \dfrac{3}{\sqrt{x} + 1}$.<br>
-                            Dễ thấy, với mọi $x \ge 0, x \ne 25$ thì $\dfrac{3}{\sqrt{x} + 1} > 0$ nên $M = 2 -
-                            \dfrac{3}{\sqrt{x} + 1} < 2$ (1)<br>
-                                Lại có $\sqrt{x} + 1 \ge 1$ với mọi $x \ge 0, x \ne 25$ nên $\dfrac{3}{\sqrt{x} + 1} \le
-                                \dfrac{3}{1} = 3$<br>
-                                Suy ra $M = 2 - \dfrac{3}{\sqrt{x} + 1} \ge 2 - 3 = -1$ (2)<br>
-                                Từ (1), (2) suy ra $-1 \le M < 2$. Vì $M \in \mathbb{Z}$ nên xét các trường hợp sau:<br>
-                                    TH1: $M = -1$, tìm được $x = 0$ (thỏa mãn);<br>
-                                    TH2: $M = 0$, tìm được $x = \dfrac{1}{4}$ (thỏa mãn);<br>
-                                    TH3: $M = 1$, tìm được $x = 4$ (thỏa mãn).<br>
-                                    Vậy $x \in \left\{0; \dfrac{1}{4}; 4\right\}$ thì biểu thức $M$ nhận giá trị nguyên.
-                        </p>
-                    </div>
-
-
-                </div>
-
-                <!-- Ví dụ 2 -->
-                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-                    <h3 class="text-xl font-bold text-brand-orange mb-3">Ví dụ 2.</h3>
-                    <div class="mb-4 text-slate-800 text-lg font-medium leading-relaxed text-justify">
-                        Cho biểu thức $B = \dfrac{3x + \sqrt{9x} - 3}{x + \sqrt{x} - 2} - \dfrac{\sqrt{x} + 1}{\sqrt{x}
-                        + 2} + \dfrac{\sqrt{x} - 2}{1 - \sqrt{x}}$ với $x \ge 0$ và $x \ne 1$.<br>
-                        a) Rút gọn biểu thức $B$;<br>
-                        b) Tìm GTNN của $\dfrac{1}{B}$;<br>
-                        c) Tìm GTNN của $P = B \cdot (\sqrt{x} - 1) + \dfrac{9}{\sqrt{x} + 1}$.
-                    </div>
-                    <div
-                        class="bg-slate-50 p-6 rounded-xl border border-slate-200 text-slate-700 text-base leading-relaxed mb-4">
-                        <strong class="text-brand-blue block mb-2 text-lg">Lời giải:</strong>
-                        <p class="mb-2"><strong>a)</strong> $x \ge 0$ và $x \ne 1$.<br>
-                            $B = \dfrac{3x + 3\sqrt{x} - 3 - x + 1 - x + 4}{(\sqrt{x} + 2)(\sqrt{x} - 1)} = \dfrac{x +
-                            3\sqrt{x} + 2}{(\sqrt{x} + 2)(\sqrt{x} - 1)} = \dfrac{(\sqrt{x}+2)(\sqrt{x}+1)}{(\sqrt{x} +
-                            2)(\sqrt{x} - 1)} = \dfrac{\sqrt{x} + 1}{\sqrt{x} - 1}$.<br>
-                            Vậy $B = \dfrac{\sqrt{x} + 1}{\sqrt{x} - 1}$ với $x \ge 0$ và $x \ne 1$.
-                        </p>
-                        <p class="mb-2"><strong>b)</strong> Ta có: $\dfrac{1}{B} = \dfrac{\sqrt{x} - 1}{\sqrt{x} + 1} =
-                            \dfrac{\sqrt{x} + 1 - 2}{\sqrt{x} + 1} = 1 - \dfrac{2}{\sqrt{x} + 1}$.<br>
-                            Vì $\sqrt{x} \ge 0$ với mọi $x \ge 0$ và $x \ne 1$ nên $\sqrt{x} + 1 \ge 1$.<br>
-                            Suy ra $\dfrac{2}{\sqrt{x} + 1} \le 2$ nên $1 - \dfrac{2}{\sqrt{x} + 1} \ge 1 - 2 = -1$ hay
-                            $\dfrac{1}{B} \ge -1$.<br>
-                            Dấu "=" xảy ra khi $x = 0$ (thoả mãn). Vậy GTNN của $\dfrac{1}{B} = -1$ tại $x = 0$.
-                        </p>
-                        <p><strong>c)</strong> $P = B \cdot (\sqrt{x} - 1) + \dfrac{9}{\sqrt{x} + 1} = \dfrac{\sqrt{x} +
-                            1}{\sqrt{x} - 1} \cdot (\sqrt{x} - 1) + \dfrac{9}{\sqrt{x} + 1} = \sqrt{x} + 1 +
-                            \dfrac{9}{\sqrt{x} + 1}$.<br>
-                            <strong>Nhận xét:</strong> $(\sqrt{a} - \sqrt{b})^2 \ge 0$ với mọi $a, b \ge 0$ nên $a + b
-                            \ge 2\sqrt{ab}$.<br>
-                            Dấu "=" xảy ra khi $a = b$.<br>
-                            Áp dụng BĐT trên với 2 số dương $\sqrt{x} + 1; \dfrac{9}{\sqrt{x} + 1}$, ta có: $P \ge 2
-                            \cdot \sqrt{(\sqrt{x} + 1) \cdot \dfrac{9}{\sqrt{x} + 1}} = 2 \cdot 3 = 6$.<br>
-                            Dấu "=" xảy ra khi $\sqrt{x} + 1 = \dfrac{9}{\sqrt{x} + 1}$ hay $x = 4$ (thoả mãn).<br>
-                            Vậy GTNN của $P = 6$ tại $x = 4$.
-                        </p>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- SLIDE 11: DẠNG 2 - LƯỢNG GIÁC -->
     <div class="slide bg-white" id="slide-11">
         <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
             <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
-                    class="fa-solid fa-ruler-combined mr-3 text-brand-orange"></i>Dạng 2: Bài toán thực tế liên quan tỷ
+                    class="fa-solid fa-ruler-combined mr-3 text-brand-orange"></i>Dạng 1: Bài toán thực tế liên quan tỷ
                 số lượng giác</h2>
             <img src="logo.png" class="h-10 object-contain" alt="Logo">
         </div>
@@ -786,7 +692,7 @@
     <div class="slide bg-white" id="slide-12">
         <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
             <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
-                    class="fa-solid fa-chart-area mr-3 text-brand-orange"></i>Dạng 3: Bài toán thực tế giải bất phương
+                    class="fa-solid fa-chart-area mr-3 text-brand-orange"></i>Dạng 2: Bài toán thực tế giải bất phương
                 trình</h2>
             <img src="logo.png" class="h-10 object-contain" alt="Logo">
         </div>
@@ -845,7 +751,7 @@
         <div class="slide bg-white" id="slide-15">
             <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
                 <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
-                        class="fa-solid fa-circle-nodes mr-3 text-brand-orange"></i>Dạng 4: Sự xác định của đường tròn
+                        class="fa-solid fa-circle-nodes mr-3 text-brand-orange"></i>Dạng 3: Sự xác định của đường tròn
                 </h2>
                 <img src="logo.png" class="h-10 object-contain" alt="Logo">
             </div>
@@ -986,7 +892,141 @@
             </div>
         </div>
 
-        <!-- SLIDE 14: Q&A -->
+        <!-- SLIDE 10: DẠNG 1 - CĂN BẬC HAI -->
+    <div class="slide bg-white" id="slide-10">
+        <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
+            <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
+                    class="fa-solid fa-square-root-variable mr-3 text-brand-orange"></i>Dạng 4: Căn bậc hai và các bài
+                toán liên quan</h2>
+            <img src="logo.png" class="h-10 object-contain" alt="Logo">
+        </div>
+        <div class="slide-content p-6 overflow-y-auto bg-slate-50">
+            <div class="w-full max-w-7xl mx-auto space-y-6 pb-20">
+                
+                <!-- Các dạng bài toán liên quan -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm mb-6">
+                    <h3 class="text-xl font-bold text-brand-orange mb-4"><i class="fa-solid fa-list-check mr-2"></i>Các dạng bài toán thường gặp</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700 font-medium text-base">
+                        <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-full bg-brand-blue/10 text-brand-blue flex items-center justify-center font-bold shrink-0">1</span>
+                            <span>Rút gọn biểu thức có biến.</span>
+                        </div>
+                        <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-full bg-brand-blue/10 text-brand-blue flex items-center justify-center font-bold shrink-0">2</span>
+                            <span>Tính giá trị của biểu thức.</span>
+                        </div>
+                        <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-full bg-brand-blue/10 text-brand-blue flex items-center justify-center font-bold shrink-0">3</span>
+                            <span>Phương trình chứa biểu thức rút gọn.</span>
+                        </div>
+                        <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-full bg-brand-blue/10 text-brand-blue flex items-center justify-center font-bold shrink-0">4</span>
+                            <span>Bất phương trình chứa biểu thức rút gọn.</span>
+                        </div>
+                        <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-full bg-brand-blue/10 text-brand-blue flex items-center justify-center font-bold shrink-0">5</span>
+                            <span>So sánh hai biểu thức bằng cách xét hiệu.</span>
+                        </div>
+                        <div class="bg-yellow-50 p-3 rounded-xl border border-yellow-300 flex items-center gap-3 shadow-sm">
+                            <span class="w-8 h-8 rounded-full bg-yellow-200 text-yellow-700 flex items-center justify-center font-bold shrink-0">6</span>
+                            <span class="text-yellow-900 font-bold">Tìm GTLN – GTNN.</span>
+                        </div>
+                        <div class="bg-yellow-50 p-3 rounded-xl border border-yellow-300 flex items-center gap-3 shadow-sm">
+                            <span class="w-8 h-8 rounded-full bg-yellow-200 text-yellow-700 flex items-center justify-center font-bold shrink-0">7</span>
+                            <span class="text-yellow-900 font-bold">Tìm x nguyên, x thực để biểu thức nhận giá trị nguyên.</span>
+                        </div>
+                        <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-full bg-brand-blue/10 text-brand-blue flex items-center justify-center font-bold shrink-0">8</span>
+                            <span>Tìm tham số m để phương trình chứa biểu thức rút gọn có nghiệm.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ví dụ 1 -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-xl font-bold text-brand-orange mb-3">Ví dụ 1.</h3>
+                    <div class="mb-4 text-slate-800 text-lg font-medium leading-relaxed text-justify">
+                        Cho các biểu thức $A = \left( \dfrac{15 - \sqrt{x}}{x - 25} + \dfrac{2}{\sqrt{x} + 5} \right) :
+                        \dfrac{\sqrt{x} + 1}{\sqrt{x} - 5}$ và $B = \dfrac{1 - \sqrt{x}}{1 + \sqrt{x}}$ với $x \ge 0, x
+                        \ne 25$.<br>
+                        a) Tính giá trị của biểu thức $B$ khi $x = 9$;<br>
+                        b) Rút gọn biểu thức $A$;<br>
+                        c) Tìm các giá trị thực của $x$ để biểu thức $M = A - 2B$ nhận giá trị nguyên.
+                    </div>
+                    <div
+                        class="bg-slate-50 p-6 rounded-xl border border-slate-200 text-slate-700 text-base leading-relaxed mb-4">
+                        <strong class="text-brand-blue block mb-2 text-lg">Lời giải:</strong>
+                        <p class="mb-2"><strong>a)</strong> Thay $x = 9$ (thỏa mãn điều kiện) vào biểu thức $B$ ta được:
+                            $B = \dfrac{1 - \sqrt{9}}{1 + \sqrt{9}} = \dfrac{1 - 3}{1 + 3} = \dfrac{-2}{4} =
+                            -\dfrac{1}{2}$.<br>
+                            Vậy $B = -\dfrac{1}{2}$ khi $x = 9$.</p>
+                        <p class="mb-2"><strong>b)</strong> $A = \dfrac{15 - \sqrt{x} + 2(\sqrt{x} - 5)}{(\sqrt{x} +
+                            5)(\sqrt{x} - 5)} \cdot \dfrac{\sqrt{x} - 5}{\sqrt{x} + 1} = \dfrac{\sqrt{x} + 5}{(\sqrt{x}
+                            + 5)(\sqrt{x} - 5)} \cdot \dfrac{\sqrt{x} - 5}{\sqrt{x} + 1} = \dfrac{1}{\sqrt{x} + 1}$;</p>
+                        <p><strong>c)</strong> Ta có $M = A - 2B = \dfrac{1}{\sqrt{x} + 1} - \dfrac{2(1 - \sqrt{x})}{1 +
+                            \sqrt{x}} = \dfrac{2\sqrt{x} - 1}{\sqrt{x} + 1} = 2 - \dfrac{3}{\sqrt{x} + 1}$.<br>
+                            Dễ thấy, với mọi $x \ge 0, x \ne 25$ thì $\dfrac{3}{\sqrt{x} + 1} > 0$ nên $M = 2 -
+                            \dfrac{3}{\sqrt{x} + 1} < 2$ (1)<br>
+                                Lại có $\sqrt{x} + 1 \ge 1$ với mọi $x \ge 0, x \ne 25$ nên $\dfrac{3}{\sqrt{x} + 1} \le
+                                \dfrac{3}{1} = 3$<br>
+                                Suy ra $M = 2 - \dfrac{3}{\sqrt{x} + 1} \ge 2 - 3 = -1$ (2)<br>
+                                Từ (1), (2) suy ra $-1 \le M < 2$. Vì $M \in \mathbb{Z}$ nên xét các trường hợp sau:<br>
+                                    TH1: $M = -1$, tìm được $x = 0$ (thỏa mãn);<br>
+                                    TH2: $M = 0$, tìm được $x = \dfrac{1}{4}$ (thỏa mãn);<br>
+                                    TH3: $M = 1$, tìm được $x = 4$ (thỏa mãn).<br>
+                                    Vậy $x \in \left\{0; \dfrac{1}{4}; 4\right\}$ thì biểu thức $M$ nhận giá trị nguyên.
+                        </p>
+                    </div>
+
+
+                </div>
+
+                <!-- Ví dụ 2 -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-xl font-bold text-brand-orange mb-3">Ví dụ 2.</h3>
+                    <div class="mb-4 text-slate-800 text-lg font-medium leading-relaxed text-justify">
+                        Cho biểu thức $B = \dfrac{3x + \sqrt{9x} - 3}{x + \sqrt{x} - 2} - \dfrac{\sqrt{x} + 1}{\sqrt{x}
+                        + 2} + \dfrac{\sqrt{x} - 2}{1 - \sqrt{x}}$ với $x \ge 0$ và $x \ne 1$.<br>
+                        a) Rút gọn biểu thức $B$;<br>
+                        b) Tìm GTNN của $\dfrac{1}{B}$;<br>
+                        c) Tìm GTNN của $P = B \cdot (\sqrt{x} - 1) + \dfrac{9}{\sqrt{x} + 1}$.
+                    </div>
+                    <div
+                        class="bg-slate-50 p-6 rounded-xl border border-slate-200 text-slate-700 text-base leading-relaxed mb-4">
+                        <strong class="text-brand-blue block mb-2 text-lg">Lời giải:</strong>
+                        <p class="mb-2"><strong>a)</strong> $x \ge 0$ và $x \ne 1$.<br>
+                            $B = \dfrac{3x + 3\sqrt{x} - 3 - x + 1 - x + 4}{(\sqrt{x} + 2)(\sqrt{x} - 1)} = \dfrac{x +
+                            3\sqrt{x} + 2}{(\sqrt{x} + 2)(\sqrt{x} - 1)} = \dfrac{(\sqrt{x}+2)(\sqrt{x}+1)}{(\sqrt{x} +
+                            2)(\sqrt{x} - 1)} = \dfrac{\sqrt{x} + 1}{\sqrt{x} - 1}$.<br>
+                            Vậy $B = \dfrac{\sqrt{x} + 1}{\sqrt{x} - 1}$ với $x \ge 0$ và $x \ne 1$.
+                        </p>
+                        <p class="mb-2"><strong>b)</strong> Ta có: $\dfrac{1}{B} = \dfrac{\sqrt{x} - 1}{\sqrt{x} + 1} =
+                            \dfrac{\sqrt{x} + 1 - 2}{\sqrt{x} + 1} = 1 - \dfrac{2}{\sqrt{x} + 1}$.<br>
+                            Vì $\sqrt{x} \ge 0$ với mọi $x \ge 0$ và $x \ne 1$ nên $\sqrt{x} + 1 \ge 1$.<br>
+                            Suy ra $\dfrac{2}{\sqrt{x} + 1} \le 2$ nên $1 - \dfrac{2}{\sqrt{x} + 1} \ge 1 - 2 = -1$ hay
+                            $\dfrac{1}{B} \ge -1$.<br>
+                            Dấu "=" xảy ra khi $x = 0$ (thoả mãn). Vậy GTNN của $\dfrac{1}{B} = -1$ tại $x = 0$.
+                        </p>
+                        <p><strong>c)</strong> $P = B \cdot (\sqrt{x} - 1) + \dfrac{9}{\sqrt{x} + 1} = \dfrac{\sqrt{x} +
+                            1}{\sqrt{x} - 1} \cdot (\sqrt{x} - 1) + \dfrac{9}{\sqrt{x} + 1} = \sqrt{x} + 1 +
+                            \dfrac{9}{\sqrt{x} + 1}$.<br>
+                            <strong>Nhận xét:</strong> $(\sqrt{a} - \sqrt{b})^2 \ge 0$ với mọi $a, b \ge 0$ nên $a + b
+                            \ge 2\sqrt{ab}$.<br>
+                            Dấu "=" xảy ra khi $a = b$.<br>
+                            Áp dụng BĐT trên với 2 số dương $\sqrt{x} + 1; \dfrac{9}{\sqrt{x} + 1}$, ta có: $P \ge 2
+                            \cdot \sqrt{(\sqrt{x} + 1) \cdot \dfrac{9}{\sqrt{x} + 1}} = 2 \cdot 3 = 6$.<br>
+                            Dấu "=" xảy ra khi $\sqrt{x} + 1 = \dfrac{9}{\sqrt{x} + 1}$ hay $x = 4$ (thoả mãn).<br>
+                            Vậy GTNN của $P = 6$ tại $x = 4$.
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 14: Q&A -->
         <div class="slide bg-white" id="slide-14">
             <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
                 <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
