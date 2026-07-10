@@ -1207,6 +1207,87 @@
                 }
             });
         </script>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 bg-slate-900/90 backdrop-blur-sm hidden flex items-center justify-center opacity-0 transition-opacity duration-300">
+        <button class="absolute top-6 right-6 text-white text-4xl hover:text-brand-orange transition-colors" onclick="closeLightbox()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img id="lightbox-img" src="" class="max-w-[90%] max-h-[90%] object-contain rounded-xl shadow-2xl scale-95 transition-transform duration-300" alt="Phóng to">
+    </div>
+
+    <script>
+        // Lightbox functionality
+        const lightboxModal = document.getElementById('lightbox-modal');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        window.openLightbox = function(imgSrc) {
+            lightboxImg.src = imgSrc;
+            lightboxModal.classList.remove('hidden');
+            // Trigger reflow to apply transition
+            void lightboxModal.offsetWidth;
+            lightboxModal.classList.remove('opacity-0');
+            lightboxImg.classList.remove('scale-95');
+            lightboxImg.classList.add('scale-100');
+        };
+
+        window.closeLightbox = function() {
+            lightboxModal.classList.add('opacity-0');
+            lightboxImg.classList.remove('scale-100');
+            lightboxImg.classList.add('scale-95');
+            setTimeout(() => {
+                lightboxModal.classList.add('hidden');
+            }, 300);
+        };
+
+        // Close on clicking outside image
+        lightboxModal.addEventListener('click', (e) => {
+            if (e.target === lightboxModal) {
+                closeLightbox();
+            }
+        });
+        
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !lightboxModal.classList.contains('hidden')) {
+                closeLightbox();
+            }
+        });
+    </script>
+
+    <script>
+        // Carousel functionality
+        let carouselIndex = 0;
+        const carouselTotal = 4;
+        const carouselTrack = document.getElementById('carousel-track');
+        const carouselDots = document.querySelectorAll('.carousel-dot');
+        const carouselCounter = document.getElementById('carousel-counter');
+
+        function updateCarousel() {
+            carouselTrack.style.transform = `translateX(-${carouselIndex * (100 / carouselTotal)}%)`;
+            carouselDots.forEach((dot, i) => {
+                if (i === carouselIndex) {
+                    dot.classList.remove('bg-slate-300');
+                    dot.classList.add('bg-brand-blue', 'scale-125');
+                } else {
+                    dot.classList.remove('bg-brand-blue', 'scale-125');
+                    dot.classList.add('bg-slate-300');
+                }
+            });
+            carouselCounter.textContent = `${carouselIndex + 1} / ${carouselTotal}`;
+        }
+
+        window.moveCarousel = function(dir) {
+            carouselIndex = (carouselIndex + dir + carouselTotal) % carouselTotal;
+            updateCarousel();
+        };
+
+        window.goToCarousel = function(idx) {
+            carouselIndex = idx;
+            updateCarousel();
+        };
+    </script>
+
 </body>
 
 </html>
