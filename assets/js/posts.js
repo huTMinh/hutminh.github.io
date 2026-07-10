@@ -580,5 +580,25 @@ Lý thuyết trò chơi dạy chúng ta một triết lý quan trọng: **Sự t
 Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các thầy cô xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
 
 👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](hop-khoi-4/index.html)**`
+    },
+    {
+        id: "hop-giao-vien-khoi-9",
+        title: "Tài liệu Họp giáo viên khối 9 (Tháng 7 & 8)",
+        description: "Nội dung triển khai, quy ước chấm chữa phiếu bài tập và các kiến thức trọng tâm, lỗi sai thường gặp của học sinh khối 9.",
+        category: "phuong-phap",
+        date: "2026-07-10",
+        readTime: "Xem Slide",
+        coverImage: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800",
+        tags: ["Khối 9", "Chuyên môn", "Giáo án"],
+        content: `Dưới đây là toàn bộ nội dung cuộc họp chuyên môn dành cho các giáo viên giảng dạy Toán khối 9. Tài liệu bao gồm:
+
+- Cơ cấu phân lớp và chuyên đề trọng tâm.
+- Quy ước chấm, chữa và trả phiếu bài tập.
+- Vận hành lớp học và bài kiểm tra định kỳ.
+- Phân tích các lỗi sai điển hình của học sinh qua các ví dụ thực tế.
+
+Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các thầy cô xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
+
+👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](hop-khoi-9/index.html)**`
     }
 ];
