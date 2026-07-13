@@ -68,10 +68,15 @@
 
         .slide-content {
             flex-grow: 1;
-            padding: 2rem 4rem;
+            padding: 1.25rem;
             overflow-y: auto;
-            padding-bottom: 6rem;
-            /* Space for footer */
+            padding-bottom: 5rem;
+        }
+        @media (min-width: 768px) {
+            .slide-content {
+                padding: 2rem 4rem;
+                padding-bottom: 6rem;
+            }
         }
 
         /* Tùy chỉnh Scrollbar */
@@ -165,17 +170,17 @@
 
     <!-- Nút điều hướng -->
     <div
-        class="fixed bottom-6 right-8 z-50 flex gap-4 bg-white/90 backdrop-blur px-4 py-2 rounded-full shadow-lg border border-slate-200">
+        class="fixed bottom-4 right-4 md:bottom-6 md:right-8 z-50 flex gap-2 md:gap-4 bg-white/90 backdrop-blur px-3 py-1.5 md:px-4 md:py-2 rounded-full shadow-lg border border-slate-200">
         <button id="prevBtn"
-            class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-600 hover:bg-brand-blue hover:text-white transition shadow-sm disabled:opacity-50 disabled:cursor-not-allowed">
-            <i class="fa-solid fa-chevron-left"></i>
+            class="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-600 hover:bg-brand-blue hover:text-white transition shadow-sm disabled:opacity-50 disabled:cursor-not-allowed">
+            <i class="fa-solid fa-chevron-left text-sm md:text-base"></i>
         </button>
-        <div class="flex items-center font-semibold text-slate-500 min-w-[3rem] justify-center" id="slideCounter">
+        <div class="flex items-center font-semibold text-slate-500 text-sm md:text-base min-w-[2.5rem] md:min-w-[3rem] justify-center" id="slideCounter">
             1/13
         </div>
         <button id="nextBtn"
-            class="w-10 h-10 flex items-center justify-center rounded-full bg-brand-orange text-white hover:bg-orange-600 transition shadow-md disabled:opacity-50 disabled:cursor-not-allowed">
-            <i class="fa-solid fa-chevron-right"></i>
+            class="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-brand-orange text-white hover:bg-orange-600 transition shadow-md disabled:opacity-50 disabled:cursor-not-allowed">
+            <i class="fa-solid fa-chevron-right text-sm md:text-base"></i>
         </button>
     </div>
 
@@ -188,19 +193,19 @@
     <div class="slide active" id="slide-1">
         <div
             class="flex-1 w-full flex flex-col items-center justify-center text-center p-8 bg-gradient-to-br from-brand-blue to-blue-900 text-white relative overflow-hidden">
-            <div class="absolute -top-24 -left-24 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
-            <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-brand-orange/20 rounded-full blur-3xl"></div>
+            <div class="absolute -top-12 -left-12 md:-top-24 md:-left-24 w-64 h-64 md:w-96 md:h-96 bg-white/5 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-12 -right-12 md:-bottom-24 md:-right-24 w-64 h-64 md:w-96 md:h-96 bg-brand-orange/20 rounded-full blur-3xl"></div>
 
             <div
-                class="bg-white px-8 py-4 rounded-2xl shadow-2xl mb-8 flex items-center justify-center gap-3 transform -rotate-2">
-                <img src="logo.png" alt="MathExpress Logo" class="h-16 object-contain">
+                class="bg-white px-6 py-3 md:px-8 md:py-4 rounded-2xl shadow-2xl mb-8 flex items-center justify-center gap-3 transform -rotate-2">
+                <img src="logo.png" alt="MathExpress Logo" class="h-12 md:h-16 object-contain">
             </div>
-            <h2 class="text-5xl md:text-6xl font-bold mb-6 leading-tight max-w-4xl shadow-black drop-shadow-md">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight max-w-4xl shadow-black drop-shadow-md px-4">
                 TRAO ĐỔI GIÁO VIÊN KHỐI 8 <br>
             </h2>
-            <div class="w-24 h-1 bg-brand-orange mb-6"></div>
+            <div class="w-16 md:w-24 h-1 bg-brand-orange mb-6"></div>
             <p
-                class="text-2xl text-blue-100 font-medium bg-black/20 px-6 py-2 rounded-full inline-block backdrop-blur-sm">
+                class="text-xl md:text-2xl text-blue-100 font-medium bg-black/20 px-5 py-2 md:px-6 md:py-2 rounded-full inline-block backdrop-blur-sm">
                 NĂM HỌC: 2026 - 2027
             </p>
         </div>
@@ -208,10 +213,10 @@
 
     <!-- SLIDE 2: NỘI DUNG TRAO ĐỔI -->
     <div class="slide bg-white" id="slide-2">
-        <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
-            <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
+        <div class="slide-header p-4 md:p-6 bg-brand-light flex items-center justify-between">
+            <h2 class="text-xl md:text-3xl font-bold text-brand-blue uppercase"><i
                     class="fa-solid fa-list-check mr-3 text-brand-orange"></i>Nội dung trao đổi</h2>
-            <img src="logo.png" class="h-10 object-contain" alt="Logo">
+            <img src="logo.png" class="h-7 md:h-10 object-contain" alt="Logo">
         </div>
         <div class="slide-content flex items-center justify-center">
             <div class="grid grid-cols-1 md:grid-cols-2 print:grid-cols-2 gap-8 w-full max-w-5xl">
@@ -263,11 +268,11 @@
 
     <!-- SLIDE 3: CƠ CẤU PHÂN LỚP & CHUYÊN ĐỀ TRỌNG TÂM KHỐI 8 -->
     <div class="slide bg-white" id="slide-3">
-        <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
-            <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
+        <div class="slide-header p-4 md:p-6 bg-brand-light flex items-center justify-between">
+            <h2 class="text-xl md:text-3xl font-bold text-brand-blue uppercase"><i
                     class="fa-solid fa-layer-group mr-3 text-brand-orange"></i>Cơ cấu phân lớp & Chuyên đề trọng tâm
                 Khối 8</h2>
-            <img src="logo.png" class="h-10 object-contain" alt="Logo">
+            <img src="logo.png" class="h-7 md:h-10 object-contain" alt="Logo">
         </div>
         <div class="slide-content">
             <h3 class="text-xl font-bold text-brand-orange mb-4"><i class="fa-solid fa-layer-group mr-2"></i>I. Cơ cấu
@@ -463,11 +468,11 @@
 
     <!-- SLIDE 4: QUY ƯỚC SỬ DỤNG TÀI LIỆU & QUY ĐỊNH ĐIỀU CHỈNH -->
     <div class="slide bg-white" id="slide-4">
-        <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
-            <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
+        <div class="slide-header p-4 md:p-6 bg-brand-light flex items-center justify-between">
+            <h2 class="text-xl md:text-3xl font-bold text-brand-blue uppercase"><i
                     class="fa-solid fa-list-check mr-3 text-brand-orange"></i>Quy ước sử dụng tài liệu & Quy định điều
                 chỉnh</h2>
-            <img src="logo.png" class="h-10 object-contain" alt="Logo">
+            <img src="logo.png" class="h-7 md:h-10 object-contain" alt="Logo">
         </div>
         <div class="slide-content flex flex-col gap-5">
 
@@ -599,30 +604,30 @@
 
     <!-- SLIDE 5: CÁC TÀI LIỆU (PDF SLIDER) -->
     <div class="slide bg-white" id="slide-5">
-        <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
-            <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
+        <div class="slide-header p-4 md:p-6 bg-brand-light flex items-center justify-between">
+            <h2 class="text-xl md:text-3xl font-bold text-brand-blue uppercase"><i
                     class="fa-solid fa-file-pdf mr-3 text-brand-orange"></i>Các tài liệu</h2>
-            <img src="logo.png" class="h-10 object-contain" alt="Logo">
+            <img src="logo.png" class="h-7 md:h-10 object-contain" alt="Logo">
         </div>
         <div class="slide-content flex flex-col pt-4">
             <div class="w-full h-full grid grid-cols-1 md:grid-cols-3 print:grid-cols-3 gap-6 pb-4">
                 <!-- PDF 1 -->
                 <div
-                    class="w-full h-full bg-slate-50 rounded-xl border-2 border-slate-200 overflow-hidden shadow-sm flex flex-col">
+                    class="w-full h-full min-h-[400px] md:min-h-0 bg-slate-50 rounded-xl border-2 border-slate-200 overflow-hidden shadow-sm flex flex-col">
                     <div class="p-3 bg-slate-200 font-bold text-slate-700 text-center border-b border-slate-300">Phiếu
                         bài (Đề BTTL và BTVN)</div>
                     <iframe src="Phiếu bài (Đề BT trên lớp và BTVN).pdf" class="w-full flex-1 border-none"></iframe>
                 </div>
                 <!-- PDF 2 -->
                 <div
-                    class="w-full h-full bg-slate-50 rounded-xl border-2 border-slate-200 overflow-hidden shadow-sm flex flex-col">
+                    class="w-full h-full min-h-[400px] md:min-h-0 bg-slate-50 rounded-xl border-2 border-slate-200 overflow-hidden shadow-sm flex flex-col">
                     <div class="p-3 bg-slate-200 font-bold text-slate-700 text-center border-b border-slate-300">Hướng
                         dẫn BTVN (HDBTVN)</div>
                     <iframe src="HDBTVN.pdf" class="w-full flex-1 border-none"></iframe>
                 </div>
                 <!-- PDF 3 -->
                 <div
-                    class="w-full h-full bg-slate-50 rounded-xl border-2 border-slate-200 overflow-hidden shadow-sm flex flex-col">
+                    class="w-full h-full min-h-[400px] md:min-h-0 bg-slate-50 rounded-xl border-2 border-slate-200 overflow-hidden shadow-sm flex flex-col">
                     <div class="p-3 bg-slate-200 font-bold text-slate-700 text-center border-b border-slate-300">Nội
                         dung bài học (NDBH)</div>
                     <iframe src="NDBH.pdf" class="w-full flex-1 border-none"></iframe>
@@ -633,11 +638,11 @@
 
     <!-- SLIDE 6: LƯU Ý TRÌNH BÀY & KÝ HIỆU -->
     <div class="slide bg-white" id="slide-6">
-        <div class="slide-header p-6 bg-rose-50 border-b-4 border-red-500 flex items-center justify-between">
-            <h2 class="text-3xl font-bold text-red-700 uppercase"><i
+        <div class="slide-header p-4 md:p-6 bg-rose-50 border-b-4 border-red-500 flex items-center justify-between">
+            <h2 class="text-xl md:text-3xl font-bold text-red-700 uppercase"><i
                     class="fa-solid fa-highlighter mr-3 text-red-600"></i>Lưu ý trình bày & ký hiệu
             </h2>
-            <img src="logo.png" class="h-10 object-contain" alt="Logo">
+            <img src="logo.png" class="h-7 md:h-10 object-contain" alt="Logo">
         </div>
         <div class="slide-content flex flex-col gap-6 justify-center">
 
@@ -702,11 +707,11 @@
     </div>
     <!-- SLIDE 6b: RÚT KINH NGHIỆM -->
     <div class="slide bg-white" id="slide-6b">
-        <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
-            <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
+        <div class="slide-header p-4 md:p-6 bg-brand-light flex items-center justify-between">
+            <h2 class="text-xl md:text-3xl font-bold text-brand-blue uppercase"><i
                     class="fa-solid fa-microscope mr-3 text-brand-orange"></i>Góc rút kinh nghiệm chuyên môn tuần qua
             </h2>
-            <img src="logo.png" class="h-10 object-contain" alt="Logo">
+            <img src="logo.png" class="h-7 md:h-10 object-contain" alt="Logo">
         </div>
         <div class="slide-content p-8 flex flex-col items-center justify-center h-[calc(100%-88px)]">
 
@@ -770,11 +775,11 @@
 
                     <!-- Prev / Next buttons -->
                     <button onclick="moveCarousel(-1)"
-                        class="absolute left-3 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center text-brand-blue text-xl transition-all hover:scale-110 z-20">
+                        class="absolute left-2 md:left-3 top-1/2 -translate-y-1/2 w-8 h-8 md:w-12 md:h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center text-brand-blue text-lg md:text-xl transition-all hover:scale-110 z-20">
                         <i class="fa-solid fa-chevron-left"></i>
                     </button>
                     <button onclick="moveCarousel(1)"
-                        class="absolute right-3 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center text-brand-blue text-xl transition-all hover:scale-110 z-20">
+                        class="absolute right-2 md:right-3 top-1/2 -translate-y-1/2 w-8 h-8 md:w-12 md:h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center text-brand-blue text-lg md:text-xl transition-all hover:scale-110 z-20">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
                 </div>
@@ -801,10 +806,10 @@
 
     <!-- SLIDE 7: VẬN HÀNH LỚP HỌC -->
     <div class="slide bg-white" id="slide-7">
-        <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
-            <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
+        <div class="slide-header p-4 md:p-6 bg-brand-light flex items-center justify-between">
+            <h2 class="text-xl md:text-3xl font-bold text-brand-blue uppercase"><i
                     class="fa-solid fa-chalkboard mr-3 text-brand-orange"></i>Vận hành lớp học</h2>
-            <img src="logo.png" class="h-10 object-contain" alt="Logo">
+            <img src="logo.png" class="h-7 md:h-10 object-contain" alt="Logo">
         </div>
         <div class="slide-content flex flex-col justify-center">
             <!-- Phần 1: 5 Bước Thực Hành Kiến Thức -->
@@ -917,15 +922,15 @@
 
     <!-- SLIDE 8: KHUNG CHƯƠNG TRÌNH DỰ KIẾN -->
     <div class="slide bg-white" id="slide-8">
-        <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
-            <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
+        <div class="slide-header p-4 md:p-6 bg-brand-light flex items-center justify-between">
+            <h2 class="text-xl md:text-3xl font-bold text-brand-blue uppercase"><i
                     class="fa-solid fa-calendar-days mr-3 text-brand-orange"></i>Khung chương trình dự kiến (Tháng 7 &
                 8)</h2>
-            <img src="logo.png" class="h-10 object-contain" alt="Logo">
+            <img src="logo.png" class="h-7 md:h-10 object-contain" alt="Logo">
         </div>
         <div class="slide-content flex flex-col items-center">
-            <div class="w-full max-w-6xl overflow-hidden rounded-xl border border-slate-300 shadow-sm">
-                <table class="w-full text-[15px] text-slate-700 table-custom bg-white" style="line-height: 1.3;">
+            <div class="w-full max-w-6xl overflow-x-auto rounded-xl border border-slate-300 shadow-sm">
+                <table class="w-full min-w-[700px] text-[15px] text-slate-700 table-custom bg-white" style="line-height: 1.3;">
                     <thead class="bg-brand-blue text-white text-[15px]">
                         <tr>
                             <th class="w-20 py-2">Tháng</th>
@@ -1039,11 +1044,11 @@
 
     <!-- SLIDE 10: CÁC VÍ DỤ -->
     <div class="slide bg-white" id="slide-10">
-        <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
-            <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
+        <div class="slide-header p-4 md:p-6 bg-brand-light flex items-center justify-between">
+            <h2 class="text-xl md:text-3xl font-bold text-brand-blue uppercase"><i
                     class="fa-solid fa-pen-to-square mr-3 text-brand-orange"></i>Các ví dụ về lỗi sai thường gặp
             </h2>
-            <img src="logo.png" class="h-10 object-contain" alt="Logo">
+            <img src="logo.png" class="h-7 md:h-10 object-contain" alt="Logo">
         </div>
         <div class="slide-content flex flex-col pt-4">
             <div class="grid grid-cols-1 md:grid-cols-2 print:grid-cols-2 gap-6">
@@ -1237,10 +1242,10 @@
 
     <!-- SLIDE 11: BÀI KIỂM TRA ĐỊNH KỲ -->
     <div class="slide bg-white" id="slide-11">
-        <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
-            <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
+        <div class="slide-header p-4 md:p-6 bg-brand-light flex items-center justify-between">
+            <h2 class="text-xl md:text-3xl font-bold text-brand-blue uppercase"><i
                     class="fa-solid fa-clipboard-check mr-3 text-brand-orange"></i>Bài kiểm tra định kỳ</h2>
-            <img src="logo.png" class="h-10 object-contain" alt="Logo">
+            <img src="logo.png" class="h-7 md:h-10 object-contain" alt="Logo">
         </div>
         <div class="slide-content flex flex-col pt-4">
 
@@ -1348,10 +1353,10 @@
 
     <!-- SLIDE 12: Q&A -->
     <div class="slide bg-white" id="slide-12">
-        <div class="slide-header p-6 bg-brand-light flex items-center justify-between">
-            <h2 class="text-3xl font-bold text-brand-blue uppercase"><i
+        <div class="slide-header p-4 md:p-6 bg-brand-light flex items-center justify-between">
+            <h2 class="text-xl md:text-3xl font-bold text-brand-blue uppercase"><i
                     class="fa-solid fa-comments mr-3 text-brand-orange"></i>Q&A - Giải đáp thắc mắc</h2>
-            <img src="logo.png" class="h-10 object-contain" alt="Logo">
+            <img src="logo.png" class="h-7 md:h-10 object-contain" alt="Logo">
         </div>
         <div class="slide-content flex flex-col items-center justify-center pt-20 text-center">
             <div class="text-[120px] text-brand-orange mb-6 opacity-80"><i class="fa-regular fa-circle-question"></i>
