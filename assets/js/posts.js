@@ -15,7 +15,9 @@ const BLOG_POSTS = [
         readTime: "8 phút đọc",
         coverImage: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=800",
         tags: ["Toán học", "John Conway", "Tư duy"],
-        content: \`*Tác giả gốc: **JOHN CONWAY***\n\nĐây là một bài giảng về sức mạnh của những ý tưởng đơn giản trong toán học.
+        content: `*Tác giả gốc: **JOHN CONWAY***
+
+Đây là một bài giảng về sức mạnh của những ý tưởng đơn giản trong toán học.
 
 Điều tôi thích làm là lấy một thứ mà người khác cho là phức tạp và khó hiểu, rồi tìm ra một ý tưởng đơn giản, sao cho bất kỳ ai – và trong trường hợp này, là các bạn – cũng có thể hiểu được thứ phức tạp đó.
 
@@ -126,7 +128,7 @@ $$\\infty + 1 = \\infty!$$
 
 Điều đó không tuyệt sao? Chúng ta cộng thêm một vào vô cực, và chúng ta lại nhận được vô cực.
 
-Như vậy, đây là một ý tưởng mạnh mẽ mà những nhà toán học chúng tôi sử dụng: Bạn lấy một thứ bạn đã học ở một nơi, và áp dụng nó cho một thứ khác, ở một nơi mà có vẻ như không hề có bất kỳ yếu tố toán học nào, nhưng thực tế là có.\`
+Như vậy, đây là một ý tưởng mạnh mẽ mà những nhà toán học chúng tôi sử dụng: Bạn lấy một thứ bạn đã học ở một nơi, và áp dụng nó cho một thứ khác, ở một nơi mà có vẻ như không hề có bất kỳ yếu tố toán học nào, nhưng thực tế là có.`
     },
     {
         id: "ubuntu-dual-boot",
