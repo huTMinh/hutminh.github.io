@@ -1,0 +1,130 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{a4paper, margin=2cm}
+
+\title{\textbf{Sức mạnh của Toán học}}
+\author{JOHN CONWAY}
+\date{}
+
+\begin{document}
+\maketitle
+
+Đây là một bài giảng về sức mạnh của những ý tưởng đơn giản trong toán học.
+
+Điều tôi thích làm là lấy một thứ mà người khác cho là phức tạp và khó hiểu, rồi tìm ra một ý tưởng đơn giản, sao cho bất kỳ ai – và trong trường hợp này, là các bạn – cũng có thể hiểu được thứ phức tạp đó.
+
+Những ý tưởng đơn giản này có thể mạnh mẽ một cách đáng kinh ngạc, và chúng cũng khó tìm một cách đáng kinh ngạc. Rất nhiều lần, phải mất cả một thế kỷ hoặc hơn để ai đó nghĩ ra một ý tưởng đơn giản; thực tế là thường mất đến hai ngàn năm, vì người Hy Lạp cổ đại lẽ ra đã có thể nghĩ ra ý tưởng đó, nhưng họ lại không làm vậy.
+
+Mọi người thường có một quan niệm sai lầm rằng những gì mà một người như Einstein đã làm là rất phức tạp. Không, những ý tưởng thực sự làm chấn động thế giới lại là những ý tưởng đơn giản. Nhưng những ý tưởng này thường mang một sự tinh tế nào đó, điều mà ngăn cản người ta nghĩ ra chúng. Ý tưởng đơn giản bắt nguồn từ một câu hỏi mà chưa ai từng nghĩ đến việc hỏi.
+
+Lấy ví dụ về câu hỏi Trái đất là hình cầu hay mặt phẳng. Liệu những người cổ đại có ngồi xuống và nghĩ: "Nào hãy xem - nó là gì, hình cầu hay mặt phẳng?" Không, tôi nghĩ tình hình thực tế là không ai có thể mường tượng ra ý tưởng Trái đất hình cầu - cho đến khi ai đó, chú ý thấy các vì sao dường như lặn ở phía Tây và mười hai giờ sau lại mọc lên ở phía Đông, nảy ra ý tưởng rằng mọi thứ có thể đang quay vòng - điều rất khó dung hòa với quan niệm đã được chấp nhận về một Trái đất phẳng.
+
+Một ý tưởng thú vị khác là khái niệm 'trên' (up). 'Trên' có phải là một khái niệm tuyệt đối? Nó từng là như vậy, trong vật lý Aristotle. Chỉ đến vật lý Newton, người ta mới nhận ra rằng 'trên' là một khái niệm cục bộ - rằng 'trên' của người này có thể là 'dưới' của người khác (ví dụ nếu người thứ nhất ở Cambridge và người thứ hai ở Úc). Khám phá ra thuyết tương đối của Einstein cũng phụ thuộc vào một nhận thức tương tự về bản chất của thời gian: rằng thời gian của một người có thể là sự chuyển động ngang của người khác.
+
+Thôi được, hãy quay lại những điều cơ bản. Tôi muốn dẫn các bạn đi qua một vài ý tưởng đơn giản liên quan đến hình vuông, hình tam giác và các nút thắt.
+
+\section*{Hình vuông}
+Hãy bắt đầu bằng một chứng minh mới cho một định lý cũ. Câu hỏi là "đường chéo của một hình vuông có thông ước (commensurable) với cạnh của nó hay không?" Hay nói theo thuật ngữ hiện đại, "căn bậc hai của 2 có phải là tỉ số của hai số nguyên không?" Câu hỏi này đã dẫn đến một khám phá vĩ đại, được ghi công cho những người theo trường phái Pythagoras, đó là khám phá ra số vô tỉ.
+
+Hãy đặt câu hỏi theo một cách khác. Liệu có thể có hai hình vuông với cạnh bằng một số nguyên $n$, có tổng diện tích bằng hệt diện tích của một hình vuông duy nhất với cạnh bằng một số nguyên khác, $m$?
+
+Điều này suýt nữa thì xảy ra đối với các hình vuông $12 \times 12$: 12 nhân 12 là 144; và 144 cộng 144 bằng 288, thực tế không hoàn toàn bằng 289, tức là 17 nhân 17. Vì vậy, $17/12 = 1.41666 \dots$ rất gần với $\sqrt{2} = 1.41421 \dots$ - nó chỉ sai lệch hai phần nghìn.
+
+Nhưng chúng ta không hỏi liệu bạn có thể tìm thấy các số nguyên $m$ và $n$ thỏa mãn một cách gần đúng $m^2 = 2n^2$ hay không. Chúng ta muốn xác định xem điều đó có thể xảy ra một cách chính xác hay không.
+
+Chà, hãy giả sử rằng điều đó có thể làm được. Khi đó phải có một số nguyên $m$ nhỏ nhất để điều này xảy ra. Hãy vẽ một hình ảnh sử dụng $m$ nhỏ nhất có thể đó.
+
+Hãy đặt hai hình vuông màu xám nhỏ (kích thước $n \times n$) vào góc trên bên phải và góc dưới bên trái của hình vuông lớn (kích thước $m \times m$).
+
+Bây giờ, một phần của hình vuông lớn bị che phủ hai lần, và một phần của hình vuông lớn không bị che phủ chút nào, bởi các hình vuông nhỏ. Phần bị che phủ hai lần là giao của hai hình vuông nhỏ, và những phần không bị che phủ là phần thừa ra. Vì diện tích của hình vuông lớn ban đầu bằng chính xác tổng diện tích của hai hình vuông nhỏ, nên diện tích của phần bị che phủ hai lần phải bằng chính xác tổng diện tích của các phần không bị che phủ.
+
+Bây giờ, kích thước của ba vùng này là bao nhiêu? Phần bị phủ hai lần là một hình vuông, và cạnh của hình vuông đó là một số nguyên, bằng $2n - m$; và hai vùng không bị phủ cũng là các hình vuông, với cạnh bằng $m - n$. Vì vậy, bắt đầu từ số nguyên $m$ được cho là nhỏ nhất có thể, sao cho $m^2$ gấp đôi bình phương của một số nguyên khác, chúng ta đã tìm thấy rằng có một số nguyên còn nhỏ hơn $(2n - m)$ cũng có tính chất này. Vậy nên không thể có nghiệm nhỏ nhất. Hãy nhớ rằng, nếu có bất kỳ nghiệm nào, một trong số chúng phải là nghiệm nhỏ nhất. Vì vậy chúng ta kết luận rằng không có nghiệm nào cả.
+
+Kết quả này có những hệ quả tri thức to lớn. Không phải mọi số thực đều là tỉ số của các số nguyên.
+
+Chứng minh mới này được tạo ra bởi một người bạn của tôi tên là Stanley Tennenbaum, người mà sau đó đã bỏ ngang ngành toán học.
+
+\section*{Hình tam giác}
+Lấy một hình tam giác, bất kỳ hình tam giác nào bạn thích, và chia ba mỗi góc của nó. Nghĩa là, cắt mỗi góc thành ba phần, tất cả có cùng kích cỡ.
+Kéo dài các đường chia ba cho đến khi chúng gặp nhau tại ba điểm.
+Sau đó, một định lý khá đáng chú ý của Frank Morley nói rằng tam giác được tạo bởi các điểm này là tam giác đều.
+Và điều này đúng với bất kỳ tam giác xuất phát nào.
+
+Định lý Morley nổi tiếng là một định lý thực sự khó chứng minh. Rất dễ để phát biểu, nhưng rất khó chứng minh. Morley đã phát biểu kết quả này vào khoảng năm 1900, và chứng minh được xuất bản đầu tiên mãi khoảng 15 năm sau mới xuất hiện. Tuy nhiên, tôi đã tìm ra một chứng minh đơn giản, với sự trợ giúp của bạn tôi, Peter Doyle.
+
+Chúng ta có thể chứng minh định lý Morley một cách đơn giản như sau. Đầu tiên, hãy cho tôi biết ba góc $A$, $B$, $C$ của tam giác ban đầu của bạn. Hãy nhớ rằng chúng phải có tổng bằng 180 độ. Đây là kế hoạch. Tôi sẽ bắt đầu từ một tam giác đều có kích thước nào đó và xây dựng sáu tam giác khác xung quanh nó, và dán chúng lại với nhau để tạo ra một tam giác có các góc $A$, $B$, và $C$, giống hệt của bạn; do đó với một sự lựa chọn nào đó về kích thước của tam giác đều, phép dựng hình của tôi sẽ tái tạo lại chính xác tam giác ban đầu của bạn; hơn nữa phương pháp dựng hình sẽ chứng minh rằng nếu bạn chia ba các góc của tam giác của mình, bạn sẽ tìm thấy tam giác đều của tôi ở giữa.
+
+Quá trình lắp ghép trông giống như một phiên bản bị vỡ vụn của tam giác, và thực sự là trong quá trình đó chúng ta sẽ dán các mảnh lại với nhau để tạo thành tam giác đó; nhưng để hiểu đúng chứng minh, bạn phải nghĩ về sáu tam giác mới như những mảnh ghép mà chúng ta sẽ định nghĩa, bắt đầu từ tam giác đều của tôi, với sự trợ giúp của các giá trị $A$, $B$, và $C$ mà bạn đã cung cấp. 
+
+Chúng ta dựng sáu tam giác mới bằng cách đầu tiên định nghĩa hình dạng của chúng, sau đó định nghĩa kích thước của chúng. Để định nghĩa hình dạng của sáu tam giác, chúng ta cố định các góc của chúng. Chúng ta đặt $\alpha = A/3$, $\beta = B/3$, và $\gamma = C/3$. Chúng ta đưa ra một ký hiệu cho các góc: với bất kỳ góc $\theta$ nào, chúng ta định nghĩa $\theta^+$ để biểu thị $\theta + 60$ và $\theta^{++}$ để biểu thị $\theta + 120$. Vì vậy, ví dụ, ba góc trong của tam giác đều (tất cả đều là 60 độ) có thể được đánh dấu là $0^+$.
+
+Chúng ta cố định các góc cho các mảnh ghép xung quanh. Tiếp theo, chúng ta cố định kích thước của mỗi tam giác tiếp giáp với tam giác đều bằng cách làm cho độ dài của một cạnh bằng với độ dài cạnh của tam giác đều.
+
+Tiếp theo, chúng ta cố định kích thước của ba tam giác tù; bằng cách áp dụng các tính chất đối xứng và độ dài các cạnh chung, chúng ta có thể làm cho tất cả các mảnh ghép khớp với nhau một cách hoàn hảo. Tổng các góc xung quanh một đỉnh bên trong điển hình là $\alpha^+ + \beta^{++} + \gamma^+ + 0^+$; đó là năm dấu $+$, trị giá 300 độ, cộng với $\alpha + \beta + \gamma$ (bằng 60 độ), mang lại tổng cộng 360 độ.
+
+Như vậy, bằng cách dán bảy mảnh lại với nhau, tôi đã tạo ra một tam giác có các góc của bạn, mà định lý Morley đúng cho nó. Do đó, định lý Morley đúng cho tam giác của bạn, và cho bất kỳ tam giác nào bạn có thể đã chọn.
+
+\section*{Các nút thắt (Knots)}
+Cuối cùng, tôi muốn kể cho các bạn một chút về lý thuyết nút thắt, và về một ý tưởng đơn giản mà tôi đã có khi còn là một học sinh trung học ở Liverpool nhiều năm trước.
+
+Đầu tiên, có gì to tát về các nút thắt? Nút thắt dường như không có gì đặc biệt mang tính toán học. Chà, điều đầu tiên khó khăn về các nút thắt là câu hỏi 'Có bất kỳ nút thắt nào không?'
+
+Nói cách khác, nút thắt này có thể được tháo ra không? (Nhân tiện, theo quy ước, người ta gắn hai đầu tự do của một nút thắt với nhau, để sợi dây tạo thành một vòng khép kín). Việc không ai tháo được nó không có nghĩa là bạn nhất thiết không thể làm được. Nó có thể chỉ có nghĩa là mọi người quá ngốc nghếch.
+
+Bây giờ, khi chúng ta nghịch ngợm với một đoạn dây, thay đổi từ cấu hình này sang cấu hình khác, có ba điều cơ bản có thể xảy ra. Chúng được gọi là các phép biến đổi Reidemeister. Chúng ta sẽ gọi các phép biến đổi này là $R_1$, $R_2$, và $R_3$.
+
+$R_1$ bao gồm việc xoắn hoặc tháo xoắn một vòng đơn, giữ nguyên mọi thứ khác. \\
+$R_2$ lấy một vòng và ấn nó xuống dưới một đoạn dây liền kề. \\
+$R_3$ là phép trượt, đưa một đoạn dây đi qua vị trí mà hai đoạn dây khác cắt nhau.
+
+Tất cả các biến dạng nút thắt đều có thể được thu gọn thành một chuỗi ba phép biến đổi này.
+
+Bây giờ, liệu có một chuỗi các phép biến đổi này cho phép bạn bắt đầu với nút thắt ở bên trái và kết thúc bằng 'vòng tròn không thắt' (unknot) ở bên phải không? Nếu chúng ta muốn chứng minh rằng một nút thắt thực sự tồn tại, chúng ta phải chỉ ra rằng không tồn tại chuỗi phép biến đổi nào như vậy.
+
+Những gì tôi sẽ làm là giới thiệu một khái niệm mà tôi gọi là \textit{knumbering} (đánh số nút thắt) của các nút thắt. Để tạo ra một knumbering, bạn gán một con số nhỏ cho bất kỳ đoạn dây nào có thể nhìn thấy; và tại nơi một đoạn dây biến mất dưới một đoạn dây khác, hai con số liên kết với đoạn dây nằm dưới phải liên hệ với nhau theo một cách phụ thuộc vào con số trên đoạn dây nằm trên. Cụ thể, nếu con số trên đoạn dây nằm trên là $b$, và các con số của đoạn dây nằm dưới ở hai bên của đoạn dây nằm trên là $a$ và $c$, thì '$a, b, c$' phải tạo thành một cấp số cộng. Điều đó có nghĩa là lượng mà bạn tăng từ $a$ lên $b$ phải chính xác bằng lượng mà bạn tăng từ $b$ lên $c$.
+
+Một điều đáng chú ý về điều kiện cấp số cộng là nó là bất biến: Tôi có thể đẩy tất cả các số $a$, $b$, và $c$ lên hoặc xuống bằng một lượng bất kỳ mà tôi muốn, và chúng vẫn sẽ thỏa mãn điều kiện cấp số cộng.
+
+Trong quá trình đánh số, nếu gặp mâu thuẫn (ví dụ, một sợi dây phải mang hai giá trị 1 và 4), một trong những sức mạnh to lớn của phương pháp toán học là tôi có thể định nghĩa mọi thứ theo ý tôi muốn; vậy nên bây giờ tôi sẽ định nghĩa 4 bằng 1. (Các nhà toán học gọi kiểu đẳng thức này là 'đồng dư modulo 3'.)
+
+Điểm cốt lõi của những knumbering này là gì? Bất kỳ knumbering hợp lệ nào vẫn là một knumbering hợp lệ khi một phép biến đổi Reidemeister được thực hiện hoặc hoàn tác. Điều này ngụ ý rằng số lượng các knumbering có thể có được bảo toàn qua các phép biến đổi.
+
+Vòng tròn không thắt chỉ có đúng ba knumbering (toàn 0, toàn 1, toàn 2 modulo 3).
+Trong khi đó, nút dẹt (trefoil knot) có ít nhất bốn knumbering.
+
+Vì vậy, chúng ta có thể chứng minh rằng nút dẹt không thể được tháo ra, bởi vì nó có một số lượng knumbering khác với vòng tròn không thắt. Điều này chứng minh rằng các nút thắt (thực sự) tồn tại.
+
+\section*{Mớ bòng bong (Tangles)}
+Tôi thường làm một trò ảo thuật nhỏ bao gồm việc buộc các nút thắt. Các mớ bòng bong (tangles) là những đoạn nút thắt với bốn đầu lòi ra, và chúng có một mối liên hệ bất ngờ với số học.
+
+Tangles được trình bày tốt nhất bởi bốn vũ công nhảy vuông (square-dancers). Hai vũ công giữ hai đầu của một sợi dây, và hai vũ công giữ hai đầu của sợi dây kia.
+
+Chúng ta có thể thao tác với mớ bòng bong bằng cách sử dụng hai phép biến đổi, gọi là \textit{twist'em up} (xoắn lên) và \textit{turn'em roun'} (quay vòng).
+
+Khi chúng ta \textit{twist'em up}, hai vũ công ở phía bên tay phải đổi chỗ cho nhau, vũ công bên dưới đi luồn dưới sợi dây của vũ công bên trên. Mỗi mớ bòng bong có một giá trị, và việc "twist'em up" sẽ thay đổi giá trị của mớ bòng bong từ $t$ thành $t+1$.
+
+Khi chúng ta \textit{turn'em roun'}, tất cả bốn vũ công di chuyển một vị trí theo chiều kim đồng hồ. Phép biến đổi này thay đổi giá trị của một mớ bòng bong từ $t$ thành $-1/t$.
+
+Để bắt đầu, mớ bòng bong ban đầu với hai sợi dây song song không đan chéo được gán giá trị $t = 0$.
+
+Những gì bạn sẽ thấy là nếu bạn sử dụng kiến thức số học của mình để đưa giá trị về 0 thông qua các bước xoắn và quay ngược lại, thì mớ bòng bong sẽ thực sự được gỡ rối. Thật là ma thuật!
+
+Đây là một ví dụ về một ý tưởng rất đơn giản. Chúng ta đã biết một ít về số học - nhưng chỉ trong bối cảnh các con số; và chúng ta không nhận ra nó áp dụng cho các nút thắt. Vì vậy, trên thực tế, nhánh nhỏ này của lý thuyết nút thắt thực chất chỉ là số học.
+
+Sau khi tìm thấy mối liên hệ bất ngờ này, hãy kết thúc bằng một điều gì đó thú vị. Bắt đầu từ $t = 0$, và \textit{turn'em roun'}. Chúng ta nhận được gì?
+$$t = -1/0$$
+Bây giờ chúng ta có $-1/0$, đó không phải là một loại vô cực, hay âm vô cực sao?
+
+Hãy xem bạn nhận được gì khi cộng thêm một vào vô cực (bằng cách thực hiện \textit{twist'em up}).
+$$\infty + 1 = \infty!$$
+
+Điều đó không tuyệt sao? Chúng ta cộng thêm một vào vô cực, và chúng ta lại nhận được vô cực.
+
+Như vậy, đây là một ý tưởng mạnh mẽ mà những nhà toán học chúng tôi sử dụng: Bạn lấy một thứ bạn đã học ở một nơi, và áp dụng nó cho một thứ khác, ở một nơi mà có vẻ như không hề có bất kỳ yếu tố toán học nào, nhưng thực tế là có.
+
+\end{document}
