@@ -724,5 +724,25 @@ Lý thuyết trò chơi dạy chúng ta một triết lý quan trọng: **Sự t
 Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các thầy cô xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
 
 👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](hop-khoi-9/index.html)**`
+    },
+    {
+        id: "hop-giao-vien-khoi-11",
+        title: "Tài liệu Họp giáo viên khối 11 (Năm học 2026-2027)",
+        description: "Nội dung triển khai, quy trình vận hành lớp học và các hướng dẫn chuyên môn dành cho giáo viên khối 11.",
+        category: "phuong-phap",
+        date: "2026-07-17",
+        readTime: "Xem Slide",
+        coverImage: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=800",
+        tags: ["Khối 11", "Chuyên môn", "Giáo án"],
+        content: `Dưới đây là toàn bộ nội dung cuộc họp chuyên môn dành cho các giáo viên giảng dạy Toán khối 11. Tài liệu bao gồm:
+
+- Quy trình tổ chức lớp học và các bước thực hành kiến thức.
+- Khung chương trình 3 tháng đầu năm học.
+- Hướng dẫn sử dụng phiếu bài và các điều chỉnh mới.
+- Vấn đề cần khắc phục và dạy học phân hóa.
+
+Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các thầy cô xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
+
+👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](hop khoi 11/index.html)**`
     }
 ];
