@@ -739,10 +739,225 @@ Lý thuyết trò chơi dạy chúng ta một triết lý quan trọng: **Sự t
 - Quy trình tổ chức lớp học và các bước thực hành kiến thức.
 - Khung chương trình 3 tháng đầu năm học.
 - Hướng dẫn sử dụng phiếu bài và các điều chỉnh mới.
+- **Tổng bằng không**: Tổng lợi ích của tất cả người chơi luôn cố định. Ví dụ: chơi cờ vua, poker hoặc chia đất đai. 
+  $$\sum_{i=1}^N u_i(s) = 0$$
+- **Tổng khác không**: Lợi ích tổng thể có thể tăng lên (hợp tác cùng có lợi) hoặc giảm đi (hai bên cùng thiệt hại). Ví dụ: thương mại quốc tế, chiến tranh hạt nhân.
+
+### Trò chơi đồng thời (Simultaneous) vs. Tuần tự (Sequential)
+- **Đồng thời**: Người chơi đưa ra quyết định cùng một lúc mà không biết lựa chọn của đối phương (ví dụ: oẳn tù tì). Trò chơi này thường biểu diễn dưới dạng ma trận (Normal Form).
+- **Tuần tự**: Người chơi thay phiên nhau đi nước cờ của mình và quan sát được hành động trước đó của đối thủ (ví dụ: cờ vua). Trò chơi này biểu diễn dưới dạng cây quyết định (Extensive Form).
+
+---
+
+## 3. Các Trò Chơi Kinh Điển Và Phân Tích Đại Số
+
+### A. Thế Lưỡng Nan Của Người Tù (The Prisoner's Dilemma)
+Đây là trò chơi phi đối xứng có tổng khác không nổi tiếng nhất để giải thích tại sao sự duy lý cá nhân lại dẫn đến sự phi lý tập thể.
+
+**Kịch bản**: Hai nghi phạm bị giam riêng biệt. Cảnh sát đề nghị mỗi người: im lặng (Hợp tác - Cooperate) hoặc khai báo (Phản bội - Defect).
+Ma trận thanh toán (Payoff Matrix) được mô tả như sau (giá trị biểu thị số năm tù giảm đi hoặc mức độ hài lòng):
+
+| Người chơi 1 \\ 2 | Hợp tác (Im lặng) | Phản bội (Khai báo) |
+| :---: | :---: | :---: |
+| **Hợp tác (Im lặng)** | $(2, 2)$ | $(0, 3)$ |
+| **Phản bội (Khai báo)** | $(3, 0)$ | $(1, 1)$ |
+
+**Phân tích đại số**:
+Giả sử Người chơi 2 chọn Hợp tác, Người chơi 1 sẽ so sánh hữu dụng:
+- Nếu chọn Hợp tác: $u_1(C, C) = 2$
+- Nếu chọn Phản bội: $u_1(D, C) = 3$ (Phản bội tốt hơn)
+
+Giả sử Người chơi 2 chọn Phản bội, Người chơi 1 so sánh:
+- Nếu chọn Hợp tác: $u_1(C, D) = 0$
+- Nếu chọn Phản bội: $u_1(D, D) = 1$ (Phản bội tốt hơn)
+
+Trong cả hai trường hợp, bất kể đối phương làm gì, **Phản bội** luôn là **Chiến thuật vượt trội (Dominant Strategy)** của cả hai người chơi. 
+Khi cả hai cùng hành động ích kỷ, họ sẽ kết thúc ở ô (Phản bội, Phản bội) với mức hữu dụng $(1, 1)$, tệ hơn rất nhiều so với việc cả hai cùng hợp tác giữ im lặng ở ô (Hợp tác, Hợp tác) đạt mức $(2, 2)$.
+
+### B. Trò Chơi Chú Gà (Chicken Game / Hawk-Dove)
+Mô hình hóa các tình huống đối đầu căng thẳng, nơi sự nhượng bộ của một bên là cần thiết để tránh thảm họa chung.
+
+**Kịch bản**: Hai chiếc xe lao thẳng vào nhau trên một cây cầu hẹp. Mỗi tài xế có hai lựa chọn: Lái thẳng (Hawk/Diều hâu) hoặc Né tránh (Dove/Bồ câu).
+
+| Người chơi 1 \\ 2 | Né tránh (Bồ câu) | Lái thẳng (Diều hâu) |
+| :---: | :---: | :---: |
+| **Né tránh (Bồ câu)** | $(0, 0)$ | $(-1, 1)$ |
+| **Lái thẳng (Diều hâu)** | $(1, -1)$ | $(-10, -10)$ |
+
+If both choose to drive straight, a catastrophic accident occurs $(-10, -10)$. This game has no single dominant strategy, but rather two pure Nash equilibria: one person drives straight while the other swerves.
+
+---
+
+## 4. Cân Bằng Nash (Nash Equilibrium)
+
+Khái niệm trung tâm của lý thuyết trò chơi phi hợp tác là **Cân Bằng Nash**.
+
+### Định nghĩa toán học
+Một bộ chiến thuật $s^* = (s_1^*, s_2^*, \dots, s_N^*) \in S$ được gọi là một **Cân bằng Nash** nếu không có bất kỳ người chơi $i$ nào có thể đơn phương thay đổi chiến thuật của mình để đạt được mức hữu dụng cao hơn, khi các người chơi khác giữ nguyên chiến thuật của họ:
+
+$$\forall i \in I, \quad \forall s_i \in S_i, \quad u_i(s_i^*, s_{-i}^*) \ge u_i(s_i, s_{-i}^*)$$
+
+Trong đó $s_{-i}^*$ ký hiệu bộ chiến thuật của tất cả người chơi trừ người chơi $i$.
+
+### Chiến thuật hỗn hợp (Mixed Strategies)
+Trong nhiều trò chơi (như oẳn tù tì), không tồn tại Cân bằng Nash trong **chiến thuật thuần túy** (pure strategies). Người chơi buộc phải ngẫu nhiên hóa các lựa chọn của mình theo một phân phối xác suất.
+
+Gọi $P_i$ là phân phối xác suất trên không gian chiến thuật thuần túy $S_i$. Một chiến thuật hỗn hợp $\sigma_i \in P_i$ gán cho mỗi hành động thuần túy $s_{ij}$ một xác suất $p_{ij}$ sao cho:
+
+$$\sum_{j} p_{ij} = 1 \quad \text{và} \quad p_{ij} \ge 0$$
+
+**Định lý Nash (1950)**: *Mọi trò chơi hữu hạn (số lượng người chơi hữu hạn và số lượng chiến thuật thuần túy hữu hạn) luôn tồn tại ít nhất một Cân bằng Nash trong chiến thuật hỗn hợp.*
+
+Để chứng minh định lý này, John Nash đã sử dụng **Định lý điểm bất động Kakutani** trong tô-pô đại số, ánh xạ tập hợp các chiến thuật phản ứng tốt nhất (best-response correspondences) vào chính nó để tìm ra điểm bất động.
+
+### Định lý Minimax của Von Neumann
+Đối với các trò chơi hai người có tổng bằng không, Cân bằng Nash trùng khớp với nguyên lý **Minimax** (tối thiểu hóa tổn thất tối đa). Đặt ma trận thanh toán của người chơi 1 là ma trận $A$ kích thước $m \times n$. Người chơi 1 chọn vectơ xác suất $x$, người chơi 2 chọn $y$.
+
+Định lý Minimax khẳng định rằng:
+
+$$\max_{x} \min_{y} x^T A y = \min_{y} \max_{x} x^T A y$$
+
+Giá trị này được gọi là **Giá trị của trò chơi (Value of the Game)**. Lời giải của trò chơi này có thể tìm được bằng cách giải bài toán Quy hoạch tuyến tính (Linear Programming) trong Đại số tuyến tính.
+
+---
+
+## 5. Ứng Dụng Thực Tiễn Rộng Lớn
+
+Lý thuyết trò chơi đã vượt ra khỏi phạm vi toán học thuần túy và trở thành công cụ phân tích không thể thiếu trong nhiều lĩnh vực:
+
+### A. Kinh tế học vi mô và Đấu thầu
+Lý thuyết trò chơi được dùng để thiết kế các cuộc đấu giá tần số vô tuyến siêu lớn trị giá hàng tỷ USD (như đấu giá phổ tần 5G), định giá độc quyền nhóm (Oligopoly), và ngăn chặn hành vi độc quyền.
+
+### B. Sinh học tiến hóa (Evolutionary Biology)
+Nhà sinh học John Maynard Smith đã đưa lý thuyết trò chơi vào tự nhiên để giải thích các hành vi của động vật thông qua khái niệm **Chiến thuật ổn định tiến hóa (Evolutionarily Stable Strategy - ESS)**. Trận chiến sinh tồn giữa các cá thể trong tự nhiên chính là một trò chơi lặp đi lặp lại nhằm tối đa hóa khả năng truyền lại bộ gen cho thế hệ sau.
+
+### C. Khoa học máy tính và Trí tuệ nhân tạo (AI)
+Trong kỷ nguyên AI, lý thuyết trò chơi là nền tảng để phát triển các thuật toán **Học máy đa tác tử (Multi-agent Reinforcement Learning)**. Mô hình mạng đối nghịch tạo sinh (GANs - Generative Adversarial Networks) sử dụng cơ chế trò chơi tổng bằng không giữa mạng Sinh (Generator) và mạng Phân biệt (Discriminator) để tạo ra các hình ảnh giả lập siêu thực.
+
+---
+
+## 6. Lời Kết
+
+Lý thuyết trò chơi dạy chúng ta một triết lý quan trọng: **Sự thành công của bạn không chỉ phụ thuộc vào nỗ lực của chính bạn, mà còn phụ thuộc vào cách bạn dự đoán và tương tác với hành động của người khác**. Việc hiểu rõ các mô hình toán học đằng sau các tương tác chiến lược giúp chúng ta đưa ra quyết định sáng suốt hơn trong một thế giới ngày càng kết nối và phức tạp.`
+    },
+    {
+        id: "hop-giao-vien-khoi-7",
+        title: "Tài liệu Họp giáo viên khối 7 (Tháng 7 & 8)",
+        description: "Nội dung triển khai, quy ước chấm chữa phiếu bài tập và các kiến thức trọng tâm, lỗi sai thường gặp của học sinh khối 7.",
+        category: "phuong-phap",
+        date: "2026-07-09",
+        readTime: "Xem Slide",
+        coverImage: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=800",
+        tags: ["Khối 7", "Chuyên môn", "Giáo án"],
+        content: `Dưới đây là toàn bộ nội dung cuộc họp chuyên môn dành cho các giáo viên giảng dạy Toán khối 7. Tài liệu bao gồm:
+
+- Cơ cấu phân lớp và chuyên đề trọng tâm.
+- Quy ước chấm, chữa và trả phiếu bài tập.
+- Vận hành lớp học và bài kiểm tra định kỳ.
+- Phân tích các lỗi sai điển hình của học sinh qua các ví dụ thực tế.
+
+Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các thầy cô xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
+
+👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](hop-khoi-7/index.html)**`
+    },
+        {
+        id: "hop-giao-vien-khoi-8",
+        title: "Tài liệu Họp giáo viên khối 8 (Tháng 7 & 8)",
+        description: "Nội dung triển khai, quy ước chấm chữa phiếu bài tập và các kiến thức trọng tâm, lỗi sai thường gặp của học sinh khối 8.",
+        category: "phuong-phap",
+        date: "2026-07-08",
+        readTime: "Xem Slide",
+        coverImage: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800",
+        tags: ["Khối 8", "Chuyên môn", "Giáo án"],
+        content: `Dưới đây là toàn bộ nội dung cuộc họp chuyên môn dành cho các giáo viên giảng dạy Toán khối 8. Tài liệu bao gồm:
+
+- Cơ cấu phân lớp và chuyên đề trọng tâm.
+- Quy ước chấm, chữa và trả phiếu bài tập.
+- Vận hành lớp học và bài kiểm tra định kỳ.
+- Phân tích các lỗi sai điển hình của học sinh qua các ví dụ thực tế.
+
+Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các thầy cô xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
+
+👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](hop-khoi-8/index.html)**`
+    },
+    {
+        id: "hop-giao-vien-khoi-4",
+        title: "Tài liệu Họp giáo viên khối 4 (Tháng 7 & 8)",
+        description: "Nội dung triển khai, quy ước chấm chữa phiếu bài tập và các kiến thức trọng tâm, lỗi sai thường gặp của học sinh khối 4.",
+        category: "phuong-phap",
+        date: "2026-07-08",
+        readTime: "Xem Slide",
+        coverImage: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=800",
+        tags: ["Khối 4", "Chuyên môn", "Giáo án"],
+        content: `Dưới đây là toàn bộ nội dung cuộc họp chuyên môn dành cho các giáo viên giảng dạy Toán khối 4. Tài liệu bao gồm:
+
+- Cơ cấu phân lớp và chuyên đề trọng tâm.
+- Quy ước chấm, chữa và trả phiếu bài tập.
+- Vận hành lớp học và bài kiểm tra định kỳ.
+- Phân tích các lỗi sai điển hình của học sinh qua các ví dụ thực tế.
+
+Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các thầy cô xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
+
+👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](hop-khoi-4/index.html)**`
+    },
+    {
+        id: "hop-giao-vien-khoi-9",
+        title: "Tài liệu Họp giáo viên khối 9 (Tháng 7 & 8)",
+        description: "Nội dung triển khai, quy ước chấm chữa phiếu bài tập và các kiến thức trọng tâm, lỗi sai thường gặp của học sinh khối 9.",
+        category: "phuong-phap",
+        date: "2026-07-10",
+        readTime: "Xem Slide",
+        coverImage: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800",
+        tags: ["Khối 9", "Chuyên môn", "Giáo án"],
+        content: `Dưới đây là toàn bộ nội dung cuộc họp chuyên môn dành cho các giáo viên giảng dạy Toán khối 9. Tài liệu bao gồm:
+
+- Cơ cấu phân lớp và chuyên đề trọng tâm.
+- Quy ước chấm, chữa và trả phiếu bài tập.
+- Vận hành lớp học và bài kiểm tra định kỳ.
+- Phân tích các lỗi sai điển hình của học sinh qua các ví dụ thực tế.
+
+Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các thầy cô xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
+
+👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](hop-khoi-9/index.html)**`
+    },
+    {
+        id: "hop-giao-vien-khoi-11",
+        title: "Tài liệu Họp giáo viên khối 11 (Năm học 2026-2027)",
+        description: "Nội dung triển khai, quy trình vận hành lớp học và các hướng dẫn chuyên môn dành cho giáo viên khối 11.",
+        category: "phuong-phap",
+        date: "2026-07-17",
+        readTime: "Xem Slide",
+        coverImage: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=800",
+        tags: ["Khối 11", "Chuyên môn", "Giáo án"],
+        content: `Dưới đây là toàn bộ nội dung cuộc họp chuyên môn dành cho các giáo viên giảng dạy Toán khối 11. Tài liệu bao gồm:
+
+- Quy trình tổ chức lớp học và các bước thực hành kiến thức.
+- Khung chương trình 3 tháng đầu năm học.
+- Hướng dẫn sử dụng phiếu bài và các điều chỉnh mới.
 - Vấn đề cần khắc phục và dạy học phân hóa.
 
 Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các thầy cô xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
 
 👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](hop khoi 11/index.html)**`
+    },
+    {
+        id: "trao-doi-chuyen-mon-tro-giang",
+        title: "Tài liệu Trao đổi Chuyên môn Trợ giảng (Năm học 2026-2027)",
+        description: "Nội dung buổi trao đổi chuyên môn dành cho đội ngũ trợ giảng, cập nhật phương pháp chấm bài và vận hành.",
+        category: "phuong-phap",
+        date: "2026-07-22",
+        readTime: "Xem Slide",
+        coverImage: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800",
+        tags: ["Trợ giảng", "Chuyên môn", "Kỹ năng"],
+        content: `Dưới đây là toàn bộ nội dung buổi trao đổi chuyên môn dành cho đội ngũ trợ giảng. Tài liệu bao gồm:
+
+- Tổng quan công việc và vai trò của trợ giảng.
+- Hướng dẫn chi tiết quy ước chấm và trả bài tập.
+- Các lỗi thường gặp khi chấm bài và cách xử lý hiệu quả.
+- Kỹ năng nhận xét bài làm và hỗ trợ học sinh.
+
+Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các bạn xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
+
+👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](Trao doi chuyen mon tro giang/index.html)**`
     }
 ];
