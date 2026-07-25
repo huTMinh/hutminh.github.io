@@ -959,5 +959,25 @@ Lý thuyết trò chơi dạy chúng ta một triết lý quan trọng: **Sự t
 Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các bạn xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
 
 👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](Trao doi chuyen mon tro giang/index.html)**`
+    },
+    {
+        id: "hop-khoi-7-thang-8",
+        title: "Tài liệu Họp giáo viên khối 7 (Tháng 8/2026)",
+        description: "Nội dung triển khai, chuyên đề trọng tâm và bài kiểm tra tháng 8 dành cho giáo viên khối 7.",
+        category: "phuong-phap",
+        date: "2026-07-25",
+        readTime: "Xem Slide",
+        coverImage: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=800",
+        tags: ["Khối 7", "Chuyên môn", "Giáo án"],
+        content: `Dưới đây là toàn bộ nội dung cuộc họp chuyên môn dành cho các giáo viên giảng dạy Toán khối 7 (Tháng 8/2026). Tài liệu bao gồm:
+
+- Cơ cấu phân lớp và chuyên đề trọng tâm tháng 8.
+- Quy ước chấm, chữa và trả phiếu bài tập.
+- Kế hoạch bài kiểm tra & Khảo sát định kỳ.
+- Phân tích các lỗi sai điển hình của học sinh.
+
+Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các thầy cô xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
+
+👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](Hop khoi 7 thang 8/index_khoi7.html)**`
     }
 ];
