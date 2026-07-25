@@ -978,6 +978,6 @@ Lý thuyết trò chơi dạy chúng ta một triết lý quan trọng: **Sự t
 
 Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các thầy cô xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
 
-👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](Hop khoi 7 thang 8/index_khoi7.html)**`
+👉 **<a href="Hop%20khoi%207%20thang%208/index_khoi7.html">Bấm vào đây để mở toàn màn hình Bản thuyết trình</a>**`
     }
 ];
