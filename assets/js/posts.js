@@ -500,106 +500,52 @@ $$\\frac{|S(l)|}{2} + |Q(l)| + |R(l)| \\ge \\frac{n-1}{2} + \\frac{3}{2m}$$
 
 Bất đẳng thức này khẳng định sự tồn tại của ít nhất $\\lfloor \\frac{n-1}{2} \\rfloor$ giao điểm khác nhau nằm hoàn toàn về một phía (hoặc nằm dưới $t(l)$ hoặc nằm trên $b(l)$). Trong không gian đối ngẫu, điều này tương đương với việc có ít nhất $\\lfloor \\frac{n-1}{2} \\rfloor$ khoảng cách phân biệt từ các điểm trong $P$ tới một đường thẳng cố định $\\gamma$.
 
-## 6. Lời Kết
+## 4. Kết Luận Khoa Học
 
-Lý thuyết trò chơi dạy chúng ta một triết lý quan trọng: **Sự thành công của bạn không chỉ phụ thuộc vào nỗ lực của chính bạn, mà còn phụ thuộc vào cách bạn dự đoán và tương tác với hành động của người khác**. Việc hiểu rõ các mô hình toán học đằng sau các tương tác chiến lược giúp chúng ta đưa ra quyết định sáng suốt hơn trong một thế giới ngày càng kết nối và phức tạp.`
+Định lý của Rom Pinchasi không chỉ chứng minh trọn vẹn giả thuyết Erdős-Purdy-Straus sau hơn 30 năm thách thức giới toán học tổ hợp, mà còn chỉ ra một đặc tính hình học rất đẹp: **$\\lfloor \\frac{n-1}{2} \\rfloor$ tam giác có diện tích khác nhau này hoàn toàn có thể được chọn sao cho chúng có cùng một cạnh chung $\\gamma$**. 
+
+Đây là một minh chứng tuyệt vời cho thấy sức mạnh của việc kết hợp giữa hình học tổ hợp trực quan và các phép biến đổi đại số tuyến tính đối ngẫu để đơn giản hóa những bài toán tưởng chừng như vô cùng phức tạp.`
     },
     {
-        id: "hop-giao-vien-khoi-7",
-        title: "Tài liệu Họp giáo viên khối 7 (Tháng 7 & 8)",
-        description: "Nội dung triển khai, quy ước chấm chữa phiếu bài tập và các kiến thức trọng tâm, lỗi sai thường gặp của học sinh khối 7.",
-        category: "phuong-phap",
-        date: "2026-07-09",
-        readTime: "Xem Slide",
-        coverImage: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=800",
-        tags: ["Khối 7", "Chuyên môn", "Giáo án"],
-        content: `Dưới đây là toàn bộ nội dung cuộc họp chuyên môn dành cho các giáo viên giảng dạy Toán khối 7. Tài liệu bao gồm:
+        id: "ly-thuyet-tro-choi",
+        title: "Nhập Môn Lý Thuyết Trò Chơi: Tư Duy Chiến Lược Trong Thế Giới Phức Tạp",
+        description: "Lý thuyết trò chơi là gì? Làm thế nào các mô hình toán học giải thích hành vi con người từ kinh tế, sinh học đến chiến tranh lạnh? Khám phá bức tranh toàn cảnh về Nash Equilibrium, Prisoner's Dilemma và lý thuyết Minimax.",
+        category: "dai-so",
+        date: "2026-05-29",
+        readTime: "15 phút đọc",
+        coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800",
+        tags: ["Lý thuyết trò chơi", "Cân bằng Nash", "Đại số ma trận", "Tư duy chiến lược"],
+        content: `Trong cuộc sống hàng ngày, chúng ta liên tục đưa ra quyết định mà kết quả của nó không chỉ phụ thuộc vào lựa chọn của bản thân ta, mà còn phụ thuộc vào hành động của những người xung quanh. Dù bạn là doanh nghiệp đang định giá sản phẩm, chính trị gia đang tranh cử, hay đơn giản là hai người đang cố phân chia một chiếc bánh, bạn đều đang tham gia vào các "trò chơi chiến lược".
 
-- Cơ cấu phân lớp và chuyên đề trọng tâm.
-- Quy ước chấm, chữa và trả phiếu bài tập.
-- Vận hành lớp học và bài kiểm tra định kỳ.
-- Phân tích các lỗi sai điển hình của học sinh qua các ví dụ thực tế.
+**Lý thuyết trò chơi (Game Theory)** là phân nhánh toán học chuyên nghiên cứu các mô hình tương tác chiến lược này giữa các bên ra quyết định hợp lý (rational decision-makers). Bài viết này sẽ cung cấp một cái nhìn sâu sắc, toàn diện về nền tảng toán học, các trò chơi kinh điển, khái niệm Cân bằng Nash huyền thoại và các ứng dụng đột phá của ngành khoa học này.
 
-Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các thầy cô xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
+---
 
-👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](hop-khoi-7/index.html)**`
-    },
-        {
-        id: "hop-giao-vien-khoi-8",
-        title: "Tài liệu Họp giáo viên khối 8 (Tháng 7 & 8)",
-        description: "Nội dung triển khai, quy ước chấm chữa phiếu bài tập và các kiến thức trọng tâm, lỗi sai thường gặp của học sinh khối 8.",
-        category: "phuong-phap",
-        date: "2026-07-08",
-        readTime: "Xem Slide",
-        coverImage: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800",
-        tags: ["Khối 8", "Chuyên môn", "Giáo án"],
-        content: `Dưới đây là toàn bộ nội dung cuộc họp chuyên môn dành cho các giáo viên giảng dạy Toán khối 8. Tài liệu bao gồm:
+## 1. Lịch Sử Và Khái Niệm Cơ Bản
 
-- Cơ cấu phân lớp và chuyên đề trọng tâm.
-- Quy ước chấm, chữa và trả phiếu bài tập.
-- Vận hành lớp học và bài kiểm tra định kỳ.
-- Phân tích các lỗi sai điển hình của học sinh qua các ví dụ thực tế.
+Lý thuyết trò chơi chính thức được khai sinh vào năm 1944 với việc xuất bản cuốn sách kinh điển *"Lý thuyết Trò chơi và Hành vi Kinh tế" (Theory of Games and Economic Behavior)* của nhà toán học **John von Neumann** và nhà kinh tế học **Oskar Morgenstern**. Ban đầu, lý thuyết chỉ tập trung vào các "trò chơi có tổng bằng không" (zero-sum games), nơi lợi ích của người này là thiệt hại của người khác.
 
-Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các thầy cô xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
+Đến những năm 1950, **John Nash** đã mở rộng lý thuyết một cách mạnh mẽ sang các trò chơi không có tổng bằng không và đưa ra khái niệm Cân bằng Nash, đặt nền móng cho toàn bộ kinh tế học vi mô hiện đại và giúp ông giành giải Nobel Kinh tế năm 1994.
 
-👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](hop-khoi-8/index.html)**`
-    },
-    {
-        id: "hop-giao-vien-khoi-4",
-        title: "Tài liệu Họp giáo viên khối 4 (Tháng 7 & 8)",
-        description: "Nội dung triển khai, quy ước chấm chữa phiếu bài tập và các kiến thức trọng tâm, lỗi sai thường gặp của học sinh khối 4.",
-        category: "phuong-phap",
-        date: "2026-07-08",
-        readTime: "Xem Slide",
-        coverImage: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=800",
-        tags: ["Khối 4", "Chuyên môn", "Giáo án"],
-        content: `Dưới đây là toàn bộ nội dung cuộc họp chuyên môn dành cho các giáo viên giảng dạy Toán khối 4. Tài liệu bao gồm:
+### Các thành phần của một trò chơi chiến lược
+Bất kỳ trò chơi nào trong toán học cũng được cấu thành bởi ba thành phần cốt lõi:
+1. **Người chơi (Players)**: Tập hợp các bên tham gia ra quyết định, ký hiệu là $I = \\{1, 2, \\dots, N\\}$.
+2. **Chiến thuật (Strategies)**: Không gian các hành động hoặc kế hoạch hành động khả thi cho mỗi người chơi. Với người chơi $i$, không gian chiến thuật ký hiệu là $S_i$, và một chiến thuật cụ thể là $s_i \\in S_i$.
+3. **Thanh toán (Payoffs / Utility)**: Lợi ích hoặc phần thưởng mà mỗi người chơi nhận được sau khi tất cả đã chọn chiến thuật của mình. Được mô tả bằng hàm hữu dụng $u_i(s_1, s_2, \\dots, s_N)$.
 
-- Cơ cấu phân lớp và chuyên đề trọng tâm.
-- Quy ước chấm, chữa và trả phiếu bài tập.
-- Vận hành lớp học và bài kiểm tra định kỳ.
-- Phân tích các lỗi sai điển hình của học sinh qua các ví dụ thực tế.
+---
 
-Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các thầy cô xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
+## 2. Phân Loại Các Trò Chơi Toán Học
 
-👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](hop-khoi-4/index.html)**`
-    },
-    {
-        id: "hop-giao-vien-khoi-9",
-        title: "Tài liệu Họp giáo viên khối 9 (Tháng 7 & 8)",
-        description: "Nội dung triển khai, quy ước chấm chữa phiếu bài tập và các kiến thức trọng tâm, lỗi sai thường gặp của học sinh khối 9.",
-        category: "phuong-phap",
-        date: "2026-07-10",
-        readTime: "Xem Slide",
-        coverImage: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800",
-        tags: ["Khối 9", "Chuyên môn", "Giáo án"],
-        content: `Dưới đây là toàn bộ nội dung cuộc họp chuyên môn dành cho các giáo viên giảng dạy Toán khối 9. Tài liệu bao gồm:
+Để phân tích một trò chơi, các nhà toán học chia chúng thành nhiều nhóm dựa trên cấu trúc thông tin và cách thức tương tác:
 
-- Cơ cấu phân lớp và chuyên đề trọng tâm.
-- Quy ước chấm, chữa và trả phiếu bài tập.
-- Vận hành lớp học và bài kiểm tra định kỳ.
-- Phân tích các lỗi sai điển hình của học sinh qua các ví dụ thực tế.
+### Trò chơi hợp tác (Cooperative) vs. Phi hợp tác (Non-cooperative)
+- **Trò chơi hợp tác**: Người chơi có thể lập các cam kết có ràng buộc pháp lý hoặc thỏa thuận chung (như liên minh kinh tế, thỏa thuận cắt giảm khí thải).
+- **Trò chơi phi hợp tác**: Mỗi người chơi tự đưa ra quyết định độc lập vì lợi ích ích kỷ của mình mà không có cơ chế ràng buộc bên ngoài (hầu hết các nghiên cứu tập trung vào đây).
 
-Để có trải nghiệm xem tốt nhất (với đầy đủ hiệu ứng chuyển slide, màu sắc và công thức Toán học sắc nét), mời các thầy cô xem trực tiếp bản trình chiếu dưới dạng toàn màn hình:
-
-👉 **[Bấm vào đây để mở toàn màn hình Bản thuyết trình](hop-khoi-9/index.html)**`
-    },
-    {
-        id: "hop-giao-vien-khoi-11",
-        title: "Tài liệu Họp giáo viên khối 11 (Năm học 2026-2027)",
-        description: "Nội dung triển khai, quy trình vận hành lớp học và các hướng dẫn chuyên môn dành cho giáo viên khối 11.",
-        category: "phuong-phap",
-        date: "2026-07-17",
-        readTime: "Xem Slide",
-        coverImage: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=800",
-        tags: ["Khối 11", "Chuyên môn", "Giáo án"],
-        content: `Dưới đây là toàn bộ nội dung cuộc họp chuyên môn dành cho các giáo viên giảng dạy Toán khối 11. Tài liệu bao gồm:
-
-- Quy trình tổ chức lớp học và các bước thực hành kiến thức.
-- Khung chương trình 3 tháng đầu năm học.
-- Hướng dẫn sử dụng phiếu bài và các điều chỉnh mới.
+### Trò chơi có tổng bằng không (Zero-Sum) vs. Tổng khác không (Non-Zero-Sum)
 - **Tổng bằng không**: Tổng lợi ích của tất cả người chơi luôn cố định. Ví dụ: chơi cờ vua, poker hoặc chia đất đai. 
-  $$\sum_{i=1}^N u_i(s) = 0$$
+  $$\\sum_{i=1}^N u_i(s) = 0$$
 - **Tổng khác không**: Lợi ích tổng thể có thể tăng lên (hợp tác cùng có lợi) hoặc giảm đi (hai bên cùng thiệt hại). Ví dụ: thương mại quốc tế, chiến tranh hạt nhân.
 
 ### Trò chơi đồng thời (Simultaneous) vs. Tuần tự (Sequential)
@@ -643,7 +589,7 @@ Mô hình hóa các tình huống đối đầu căng thẳng, nơi sự nhượ
 | **Né tránh (Bồ câu)** | $(0, 0)$ | $(-1, 1)$ |
 | **Lái thẳng (Diều hâu)** | $(1, -1)$ | $(-10, -10)$ |
 
-If both choose to drive straight, a catastrophic accident occurs $(-10, -10)$. This game has no single dominant strategy, but rather two pure Nash equilibria: one person drives straight while the other swerves.
+Nếu cả hai cùng lái thẳng, tai nạn thảm khốc xảy ra $(-10, -10)$. Trò chơi này không có chiến thuật vượt trội duy nhất, mà có hai trạng thái cân bằng thuần túy: một người lái thẳng và một người né tránh.
 
 ---
 
@@ -652,29 +598,29 @@ If both choose to drive straight, a catastrophic accident occurs $(-10, -10)$. T
 Khái niệm trung tâm của lý thuyết trò chơi phi hợp tác là **Cân Bằng Nash**.
 
 ### Định nghĩa toán học
-Một bộ chiến thuật $s^* = (s_1^*, s_2^*, \dots, s_N^*) \in S$ được gọi là một **Cân bằng Nash** nếu không có bất kỳ người chơi $i$ nào có thể đơn phương thay đổi chiến thuật của mình để đạt được mức hữu dụng cao hơn, khi các người chơi khác giữ nguyên chiến thuật của họ:
+Một bộ chiến thuật $s^* = (s_1^*, s_2^*, \\dots, s_N^*) \\in S$ được gọi là một **Cân bằng Nash** nếu không có bất kỳ người chơi $i$ nào có thể đơn phương thay đổi chiến thuật của mình để đạt được mức hữu dụng cao hơn, khi các người chơi khác giữ nguyên chiến thuật của họ:
 
-$$\forall i \in I, \quad \forall s_i \in S_i, \quad u_i(s_i^*, s_{-i}^*) \ge u_i(s_i, s_{-i}^*)$$
+$$\\forall i \\in I, \\quad \\forall s_i \\in S_i, \\quad u_i(s_i^*, s_{-i}^*) \\ge u_i(s_i, s_{-i}^*)$$
 
 Trong đó $s_{-i}^*$ ký hiệu bộ chiến thuật của tất cả người chơi trừ người chơi $i$.
 
 ### Chiến thuật hỗn hợp (Mixed Strategies)
 Trong nhiều trò chơi (như oẳn tù tì), không tồn tại Cân bằng Nash trong **chiến thuật thuần túy** (pure strategies). Người chơi buộc phải ngẫu nhiên hóa các lựa chọn của mình theo một phân phối xác suất.
 
-Gọi $P_i$ là phân phối xác suất trên không gian chiến thuật thuần túy $S_i$. Một chiến thuật hỗn hợp $\sigma_i \in P_i$ gán cho mỗi hành động thuần túy $s_{ij}$ một xác suất $p_{ij}$ sao cho:
+Gọi $P_i$ là phân phối xác suất trên không gian chiến thuật thuần túy $S_i$. Một chiến thuật hỗn hợp $\\sigma_i \\in P_i$ gán cho mỗi hành động thuần túy $s_{ij}$ một xác suất $p_{ij}$ sao cho:
 
-$$\sum_{j} p_{ij} = 1 \quad \text{và} \quad p_{ij} \ge 0$$
+$$\\sum_{j} p_{ij} = 1 \\quad \\text{và} \\quad p_{ij} \\ge 0$$
 
 **Định lý Nash (1950)**: *Mọi trò chơi hữu hạn (số lượng người chơi hữu hạn và số lượng chiến thuật thuần túy hữu hạn) luôn tồn tại ít nhất một Cân bằng Nash trong chiến thuật hỗn hợp.*
 
 Để chứng minh định lý này, John Nash đã sử dụng **Định lý điểm bất động Kakutani** trong tô-pô đại số, ánh xạ tập hợp các chiến thuật phản ứng tốt nhất (best-response correspondences) vào chính nó để tìm ra điểm bất động.
 
 ### Định lý Minimax của Von Neumann
-Đối với các trò chơi hai người có tổng bằng không, Cân bằng Nash trùng khớp với nguyên lý **Minimax** (tối thiểu hóa tổn thất tối đa). Đặt ma trận thanh toán của người chơi 1 là ma trận $A$ kích thước $m \times n$. Người chơi 1 chọn vectơ xác suất $x$, người chơi 2 chọn $y$.
+Đối với các trò chơi hai người có tổng bằng không, Cân bằng Nash trùng khớp với nguyên lý **Minimax** (tối thiểu hóa tổn thất tối đa). Đặt ma trận thanh toán của người chơi 1 là ma trận $A$ kích thước $m \\times n$. Người chơi 1 chọn vectơ xác suất $x$, người chơi 2 chọn $y$.
 
 Định lý Minimax khẳng định rằng:
 
-$$\max_{x} \min_{y} x^T A y = \min_{y} \max_{x} x^T A y$$
+$$\\max_{x} \\min_{y} x^T A y = \\min_{y} \\max_{x} x^T A y$$
 
 Giá trị này được gọi là **Giá trị của trò chơi (Value of the Game)**. Lời giải của trò chơi này có thể tìm được bằng cách giải bài toán Quy hoạch tuyến tính (Linear Programming) trong Đại số tuyến tính.
 
